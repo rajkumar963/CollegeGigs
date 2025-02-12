@@ -12,7 +12,7 @@ const Hero = () => {
               1800+  Investors Ready to Connect
             </span>
             <h1 className="animate-fade-up text-4xl sm:text-5xl md:text-6xl font-bold text-primary mb-6">
-            Looking for funding? 1800+ investors are ready to help!
+            Looking for funding! 1800+ investors are ready to help!
             </h1>
             <p className="animate-fade-up animation-delay-100 max-w-2xl mx-auto text-lg text-gray-600 mb-8">
               Investment Gurus bridges the gap between innovative startups from Tier 3 cities

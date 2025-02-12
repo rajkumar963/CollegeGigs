@@ -1,5 +1,8 @@
 
-import { Mail, Github, Linkedin, Twitter, Youtube } from "lucide-react";
+import { Mail} from "lucide-react";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FiTwitter } from "react-icons/fi";
+import { LuYoutube } from "react-icons/lu";
 import { Button } from "./ui/button";
 
 const Footer = () => {
@@ -49,22 +52,48 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a href="#" className="text-sm opacity-80 hover:opacity-100">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm opacity-80 hover:opacity-100">
                   E-books
                 </a>
               </li>
               <li>
                 <a href="#" className="text-sm opacity-80 hover:opacity-100">
-                  Webinars
+                  Newsletters
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-sm opacity-80 hover:opacity-100">
+                  Mentors
                 </a>
               </li>
               <li>
                 <a href="#" className="text-sm opacity-80 hover:opacity-100">
                   FAQs
+                </a>
+              </li>
+            </ul>
+          </div>
+          {/* Rules */}
+          <div className="space-y-4">
+            <h4 className="text-lg font-semibold">Rules & Policies</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="#" className="text-sm opacity-80 hover:opacity-100">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-sm opacity-80 hover:opacity-100">
+                  Cancellation Policy
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-sm opacity-80 hover:opacity-100">
+                  Refund Policy
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-sm opacity-80 hover:opacity-100">
+                  Terms and Conditions
                 </a>
               </li>
             </ul>
@@ -85,25 +114,19 @@ const Footer = () => {
                 href="#"
                 className="text-white hover:text-accent-foreground transition-colors"
               >
-                <Github className="h-5 w-5" />
+                <FaLinkedinIn  className="h-5 w-5" />
               </a>
               <a
                 href="#"
                 className="text-white hover:text-accent-foreground transition-colors"
               >
-                <Linkedin className="h-5 w-5" />
+                <FiTwitter className="h-5 w-5" />
               </a>
               <a
                 href="#"
                 className="text-white hover:text-accent-foreground transition-colors"
               >
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="text-white hover:text-accent-foreground transition-colors"
-              >
-                <Youtube className="h-5 w-5" />
+                <LuYoutube className="h-5 w-5" />
               </a>
             </div>
           </div>
