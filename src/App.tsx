@@ -8,6 +8,9 @@ import NotFound from "./pages/NotFound";
 import Resources from "./components/NavbarFeatures/Resources";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Services from "./components/NavbarFeatures/Services";
+import Courses from "./components/NavbarFeatures/Courses";
+import PitchDeckSection from "./components/PitchDeckSection";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -20,7 +23,10 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/courses" element={<Courses />} />
           <Route path="/resources" element={<Resources />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/services/pitch-deck" element={<PitchDeckSection/>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer/>
