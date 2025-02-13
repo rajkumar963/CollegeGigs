@@ -1,8 +1,10 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <div className="relative overflow-hidden pt-32 pb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -19,7 +21,7 @@ const Hero = () => {
               and global investors. One click away from your next big investment.
             </p>
             <div className="animate-fade-up animation-delay-200 flex flex-col sm:flex-row justify-center gap-4">
-              <Button size="lg" className="group" onClick={() => window.location.href = "/services"}>
+              <Button size="lg" className="group" onClick={() => navigate("/services")}>
                 Other Services
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>

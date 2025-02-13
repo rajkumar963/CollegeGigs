@@ -40,7 +40,7 @@ const Services: React.FC = () => {
               onClick={() => navigate('/services/pitch-deck')}
               className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
             >
-              Learn More
+              More Details
             </button>
           </CardContent>
         </Card>
@@ -58,10 +58,10 @@ const Services: React.FC = () => {
               Building responsive and high-performance websites for businesses and startups.
             </p>
             <button
-              onClick={() => scrollToSection(websiteRef)}
+              onClick={() => navigate('/services/website')}
               className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
             >
-              Learn More
+              More Details
             </button>
           </CardContent>
         </Card>
@@ -79,10 +79,10 @@ const Services: React.FC = () => {
               Developing detailed business plans to guide startups and enterprises.
             </p>
             <button
-              onClick={() => scrollToSection(businessPlanRef)}
+              onClick={() => navigate('/services/business')}
               className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
             >
-              Learn More
+              More Details
             </button>
           </CardContent>
         </Card>
