@@ -18,7 +18,7 @@ const AboutUs = () => {
         </div>
         
         {/* Right Image Section */}
-        <div className="md:w-1/2 flex justify-center mt-8 md:mt-0 relative ml-8 mr-[-100px]">
+        <div className="md:w-1/2 flex justify-center mt-8 md:mt-0 relative  ">
           <div className="relative">
             <img
               src="https://img.freepik.com/free-vector/brainstorming-concept-landing-page_52683-26979.jpg?uid=R187627718&ga=GA1.1.856026252.1735303750&semt=ais_authors_boost" 
