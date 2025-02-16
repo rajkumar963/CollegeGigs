@@ -9,11 +9,14 @@ import Resources from "./components/NavbarFeatures/Resources";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Services from "./components/NavbarFeatures/Services";
-import Courses from "./components/NavbarFeatures/Courses";
+// import Courses from "./components/NavbarFeatures/Courses";
 import InvestorDetails from "./components/NavbarFeatures/InvestorDetails";
 import PitchDeckSection from "./components/PitchDeckSection";
 import WebsiteSection from "./components/NavbarFeatures/Services/WebsiteSection";
 import Business from "./components/NavbarFeatures/Services/Business";
+import PrivacyPolicy from "./components/AllPolicy/PrivacyPolicy";
+import FAQ from "./components/FAQ";
+import LogoDesign from "./components/NavbarFeatures/Services/LogoDesign";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -25,14 +28,16 @@ const App = () => (
         <Navbar /> 
         <Routes>
           <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="/investors" element={<InvestorDetails />} />
-          <Route path="/courses" element={<Courses />} />
+          {/* <Route path="/courses" element={<Courses />} /> */}
           <Route path="/resources" element={<Resources />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/pitch-deck" element={<PitchDeckSection/>} />
           <Route path="/services/website" element={<WebsiteSection/>} />
           <Route path="/services/business" element={<Business/>} />
+          <Route path="/services/logodesign" element={<LogoDesign/>} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy/>}/>
+          <Route path="/faq" element={<FAQ/>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer/>

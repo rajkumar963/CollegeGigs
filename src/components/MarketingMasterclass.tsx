@@ -1,79 +1,53 @@
+import React from "react";
 
-import { Book, ChartBarIcon, Megaphone } from "lucide-react";
-import { Button } from "./ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "./ui/card";
+const experienceLevels = [
+  {
+    years: "1-3 Yrs",
+    description: "Explore startup opportunities and innovate in emerging markets. Learn the fundamentals of entrepreneurship and build your network."
+  },
+  {
+    years: "3-9 Yrs",
+    description: "Take on leadership roles in startups, scale innovative solutions, and drive growth through strategic execution."
+  },
+  {
+    years: "10+ Yrs",
+    description: "Mentor startup founders, guide entrepreneurship efforts, and contribute to building successful businesses."
+  }
+];
 
-const MarketingMasterclass = () => {
+
+const ExperienceSection: React.FC = () => {
   return (
-    <section className="py-20 px-4 bg-slate-50">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl font-bold mb-4 text-primary">
-            Marketing & Entrepreneurship Masterclass
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Learn the best strategies to build and scale your brand through our comprehensive marketing masterclass. We provide you with the tools and knowledge to effectively promote your startup and reach your target audience.
-          </p>
-        </div>
+    <section className="py-16 bg-white text-center">
+      <h2 className="text-3xl font-bold text-black mb-10">
+        Who is Thestartupwallah for?
+      </h2>
+      <div className="relative w-full max-w-7xl mx-auto h-[650px]">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center "
+          style={{
+            backgroundImage:
+              "url('https://img.freepik.com/premium-vector/background-school-objects_23-2147496284.jpg?ga=GA1.1.856026252.1735303750&semt=ais_authors_boost')",
+            filter: "brightness(50%)",
+          }}
+        ></div> 
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <Card className="animate-fade-up" style={{ animationDelay: "100ms" }}>
-            <CardHeader>
-              <div className="flex items-center gap-4">
-                <Book className="w-8 h-8 text-accent" />
-                <CardTitle className="text-xl">Comprehensive Curriculum</CardTitle>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <CardDescription className="min-h-[100px]">
-                Master essential marketing concepts through our structured learning path, covering digital marketing, branding, and growth strategies.
-              </CardDescription>
-            </CardContent>
-          </Card>
-
-          <Card className="animate-fade-up" style={{ animationDelay: "200ms" }}>
-            <CardHeader>
-              <div className="flex items-center gap-4">
-                <Megaphone className="w-8 h-8 text-accent" />
-                <CardTitle className="text-xl">Practical Implementation</CardTitle>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <CardDescription className="min-h-[100px]">
-                Apply your learning through hands-on projects and real-world case studies. Get feedback from industry experts on your marketing strategies.
-              </CardDescription>
-            </CardContent>
-          </Card>
-
-          <Card className="animate-fade-up" style={{ animationDelay: "300ms" }}>
-            <CardHeader>
-              <div className="flex items-center gap-4">
-                <ChartBarIcon className="w-8 h-8 text-accent" />
-                <CardTitle className="text-xl">Growth Analytics</CardTitle>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <CardDescription className="min-h-[100px]">
-                Learn to measure and analyze your marketing efforts using data-driven approaches. Make informed decisions based on metrics and KPIs.
-              </CardDescription>
-            </CardContent>
-          </Card>
-        </div>
-
-        <div className="text-center mt-12">
-          <Button className="bg-accent hover:bg-accent/90">
-            Join the Masterclass
-          </Button>
+        {/* Foreground Content */}
+        <div className="relative flex flex-col md:flex-row justify-center items-center gap-8 px-6 py-[130px]">
+          {experienceLevels.map((level, index) => (
+            <div
+              key={index}
+              className="bg-black/40 text-white p-6 rounded-lg w-full md:w-1/3 border border-white"
+            >
+              <h3 className="text-2xl font-semibold">{level.years}</h3>
+              <p className="text-sm mt-2">{level.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
   );
 };
 
-export default MarketingMasterclass;
+export default ExperienceSection;

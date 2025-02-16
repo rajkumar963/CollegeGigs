@@ -5,7 +5,7 @@ const investors = [
   { name: "Microsoft", logo: "https://www.myinvestorlist.com/microsoft.svg" },
   { name: "Airbnb", logo: "https://www.myinvestorlist.com/airbnb.svg" },
   { name: "Amazon", logo: "https://www.myinvestorlist.com/amazon.svg" },
-  { name: "Blume", logo: "	https://www.myinvestorlist.com/blume.svg" },
+  { name: "Blume", logo: "https://www.myinvestorlist.com/blume.svg" },
   { name: "YouTube", logo: "https://www.myinvestorlist.com/youtube.svg" },
   { name: "Adobe", logo: "https://www.myinvestorlist.com/adobe.svg" },
   { name: "Google", logo: "https://i.pinimg.com/736x/e2/19/d9/e219d9fe14c904b28e0e0898e4fcdd4c.jpg" },
@@ -14,23 +14,23 @@ const investors = [
 
 const InvestorsSection: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center py-10 bg-white">
-      <h2 className="text-black-600 text-2xl font-semibold mb-[80px]">
-      Supported by investors from:
+    <div className="flex flex-col items-center justify-center py-10 bg-white py-[80px]">
+      <h2 className="text-black text-2xl font-semibold mb-[80px]">
+        Our Investors come from:
       </h2>
-      <div className="overflow-hidden w-full">
+      <div className="overflow-hidden w-full relative">
         <motion.div
-          className="flex gap-12 animate-scroll"
-          animate={{ x: ["0%", "-100%"] }}
+          className="flex w-max gap-8"
+          animate={{ x: ["0%", "-50%"] }}
           transition={{
             repeat: Infinity,
-            duration: 30,
+            duration: 15,
             ease: "linear",
           }}
         >
-          {investors.map((investor) => (
+          {[...investors, ...investors].map((investor, index) => (
             <img
-              key={investor.name}
+              key={index}
               src={investor.logo}
               alt={investor.name}
               className="h-11 w-auto"

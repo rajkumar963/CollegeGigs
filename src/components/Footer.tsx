@@ -4,6 +4,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
 import { LuYoutube } from "react-icons/lu";
 import { Button } from "./ui/button";
+import {Link} from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -24,24 +25,24 @@ const Footer = () => {
             <h4 className="text-lg font-semibold">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-sm opacity-80 hover:opacity-100">
+                <Link to="/" className="text-sm opacity-80 hover:opacity-100">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm opacity-80 hover:opacity-100">
+                <Link to="/services" className="text-sm opacity-80 hover:opacity-100">
                   Our Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm opacity-80 hover:opacity-100">
+                <Link to="#" className="text-sm opacity-80 hover:opacity-100">
                   Investment Process
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm opacity-80 hover:opacity-100">
+                <Link to="#" className="text-sm opacity-80 hover:opacity-100">
                   Success Stories
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -51,24 +52,20 @@ const Footer = () => {
             <h4 className="text-lg font-semibold">Resources</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-sm opacity-80 hover:opacity-100">
+                <Link to="/resources" className="text-sm opacity-80 hover:opacity-100">
                   E-books
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm opacity-80 hover:opacity-100">
+                <Link to="#" className="text-sm opacity-80 hover:opacity-100">
                   Newsletters
-                </a>
+                </Link>
               </li>
+            
               <li>
-                <a href="#" className="text-sm opacity-80 hover:opacity-100">
-                  Mentors
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm opacity-80 hover:opacity-100">
+                <Link to="/faq" className="text-sm opacity-80 hover:opacity-100">
                   FAQs
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -77,7 +74,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold">Rules & Policies</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-sm opacity-80 hover:opacity-100">
+                <a href="./public/Privacy_Policy.pdf" className="text-sm opacity-80 hover:opacity-100">
                   Privacy Policy
                 </a>
               </li>
@@ -134,7 +131,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-white/10">
           <div className="text-center text-sm text-white/60">
-            <p>© 2024 Investment Gurus. All rights reserved.</p>
+            <p>© 2025 Thestartupwallah. All rights reserved.</p>
           </div>
         </div>
       </div>

@@ -1,17 +1,16 @@
 import React, { useRef } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { FaLaptopCode, FaChartLine, FaBusinessTime } from "react-icons/fa";
+import { FaLaptopCode, FaChartLine, FaBusinessTime, FaPaintBrush } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 const Services: React.FC = () => {
-  // Create references for each section
   const pitchDeckRef = useRef<HTMLDivElement>(null);
   const websiteRef = useRef<HTMLDivElement>(null);
   const businessPlanRef = useRef<HTMLDivElement>(null);
+  const logoDesignRef = useRef<HTMLDivElement>(null);
 
   const navigate = useNavigate();
 
-  // Function to scroll to a specific section
   const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
     ref.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
@@ -24,7 +23,6 @@ const Services: React.FC = () => {
       </div>
 
       <div className="mt-8 grid gap-6 md:grid-cols-3 px-6">
-        {/* Pitch Deck Services */}
         <Card className="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition">
           <CardHeader>
             <div className="flex justify-center">
@@ -45,7 +43,6 @@ const Services: React.FC = () => {
           </CardContent>
         </Card>
 
-        {/* Website Services */}
         <Card className="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition">
           <CardHeader>
             <div className="flex justify-center">
@@ -66,7 +63,6 @@ const Services: React.FC = () => {
           </CardContent>
         </Card>
 
-        {/* Business Plan Services */}
         <Card className="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition">
           <CardHeader>
             <div className="flex justify-center">
@@ -80,6 +76,26 @@ const Services: React.FC = () => {
             </p>
             <button
               onClick={() => navigate('/services/business')}
+              className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+            >
+              More Details
+            </button>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition">
+          <CardHeader>
+            <div className="flex justify-center">
+              <FaPaintBrush className="text-red-600 text-4xl" />
+            </div>
+          </CardHeader>
+          <CardContent>
+            <CardTitle className="text-xl font-semibold text-gray-800">Logo Design Services</CardTitle>
+            <p className="text-gray-600 mt-2">
+              Creating unique and professional logo designs tailored to your brand identity.
+            </p>
+            <button
+              onClick={() => navigate('/services/logodesign')}
               className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
             >
               More Details

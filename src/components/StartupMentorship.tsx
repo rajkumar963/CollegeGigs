@@ -82,11 +82,11 @@ const StartupMentorship = () => {
           </Card>
         </div>
 
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <Button className="bg-accent hover:bg-accent/90">
             Schedule a Mentorship Call
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
