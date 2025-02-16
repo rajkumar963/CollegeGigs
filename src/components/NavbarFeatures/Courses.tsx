@@ -84,7 +84,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
           </p>
         </div>
       </div>
-      <button className="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition mt-6">
+      <button className="w-full bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition mt-6">
         View Course Details
       </button>
     </div>

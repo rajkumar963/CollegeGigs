@@ -11,6 +11,8 @@ import Footer from "./components/Footer";
 import Services from "./components/NavbarFeatures/Services";
 // import Courses from "./components/NavbarFeatures/Courses";
 import InvestorDetails from "./components/NavbarFeatures/InvestorDetails";
+import Login from "./pages/Login/Login";
+import Signin from "./pages/Signin/Signin";
 import PitchDeckSection from "./components/PitchDeckSection";
 import WebsiteSection from "./components/NavbarFeatures/Services/WebsiteSection";
 import Business from "./components/NavbarFeatures/Services/Business";
@@ -34,6 +36,8 @@ const App = () => (
           <Route path="/services" element={<Services />} />
           <Route path="/services/pitch-deck" element={<PitchDeckSection/>} />
           <Route path="/services/website" element={<WebsiteSection/>} />
+          <Route path="/signin" element={<Signin/>} />
+          <Route path="/login" element={<Login/>} />
           <Route path="/services/business" element={<Business/>} />
           <Route path="/services/logodesign" element={<LogoDesign/>} />
           <Route path="/privacypolicy" element={<PrivacyPolicy/>}/>
