@@ -59,8 +59,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="text-xl font-bold text-primary">
-              Thestartupwallah
+            <Link to="/" className="text-xl font-bold text-primary w-[240px] ">
+              <img src="https://res.cloudinary.com/dsdcta1sr/image/upload/v1739729422/The_startup_wallah_1_xxycdt.png" className="w-full h-[85px]" alt="" />
             </Link>
           </div>
           

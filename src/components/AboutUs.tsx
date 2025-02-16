@@ -21,9 +21,9 @@ const AboutUs = () => {
         <div className="md:w-1/2 flex justify-center mt-8 md:mt-0 relative  ">
           <div className="relative">
             <img
-              src="https://img.freepik.com/free-vector/brainstorming-concept-landing-page_52683-26979.jpg?uid=R187627718&ga=GA1.1.856026252.1735303750&semt=ais_authors_boost" 
+              src="https://res.cloudinary.com/dsdcta1sr/image/upload/v1739704193/Business_Plan-cuate_cmvfjr.svg" 
               alt="Person working on a laptop"
-              className="rounded-lg w-full max-w-2xl "
+              className="rounded-lg w-[500px] h-[450px] object-cover"
             />
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r  via-transparent to-transparent opacity-30 rounded-lg"></div>
           </div>

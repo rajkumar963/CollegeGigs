@@ -2,14 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const investors = [
-  { name: "Microsoft", logo: "https://www.myinvestorlist.com/microsoft.svg" },
-  { name: "Airbnb", logo: "https://www.myinvestorlist.com/airbnb.svg" },
-  { name: "Amazon", logo: "https://www.myinvestorlist.com/amazon.svg" },
-  { name: "Blume", logo: "https://www.myinvestorlist.com/blume.svg" },
-  { name: "YouTube", logo: "https://www.myinvestorlist.com/youtube.svg" },
-  { name: "Adobe", logo: "https://www.myinvestorlist.com/adobe.svg" },
+  { name: "Microsoft", logo: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1739702754/microsoft_dmktzc.svg" },
+  { name: "Airbnb", logo: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1739702754/airbnb_yvllmb.svg" },
+  { name: "Amazon", logo: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1739702754/amazon_kmcavr.svg" },
+  { name: "Blume", logo: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1739702754/blume_bbuefl.svg" },
+  { name: "YouTube", logo: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1739702754/youtube_g7mvej.svg" },
+  { name: "Adobe", logo: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1739702754/adobe_qdbt6o.svg" },
   { name: "Google", logo: "https://i.pinimg.com/736x/e2/19/d9/e219d9fe14c904b28e0e0898e4fcdd4c.jpg" },
-  { name: "PW", logo: "https://images.seeklogo.com/logo-png/47/1/physics-wallah-logo-png_seeklogo-474856.png" },
+  { name: "PW", logo: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1739704193/physics-wallah_rwjz5c.png" },
 ];
 
 const InvestorsSection: React.FC = () => {

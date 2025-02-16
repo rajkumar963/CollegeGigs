@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-white">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold">Investment Gurus</h3>
+            <h3 className="text-xl font-bold">Thestartupwallah</h3>
             <p className="text-sm opacity-80">
               Connecting ambitious startups with experienced investors to create
               successful ventures.

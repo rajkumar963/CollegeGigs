@@ -16,7 +16,6 @@ import Signin from "./pages/Signin/Signin";
 import PitchDeckSection from "./components/PitchDeckSection";
 import WebsiteSection from "./components/NavbarFeatures/Services/WebsiteSection";
 import Business from "./components/NavbarFeatures/Services/Business";
-import PrivacyPolicy from "./components/AllPolicy/PrivacyPolicy";
 import FAQ from "./components/FAQ";
 import LogoDesign from "./components/NavbarFeatures/Services/LogoDesign";
 const queryClient = new QueryClient();
@@ -40,7 +39,6 @@ const App = () => (
           <Route path="/login" element={<Login/>} />
           <Route path="/services/business" element={<Business/>} />
           <Route path="/services/logodesign" element={<LogoDesign/>} />
-          <Route path="/privacypolicy" element={<PrivacyPolicy/>}/>
           <Route path="/faq" element={<FAQ/>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
