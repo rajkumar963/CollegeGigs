@@ -59,7 +59,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="text-xl font-bold text-primary w-[240px] ">
+            <Link to="/" className="text-xl font-bold text-primary w-[245px] ">
               <img src="https://res.cloudinary.com/dsdcta1sr/image/upload/v1739729422/The_startup_wallah_1_xxycdt.png" className="w-full h-[85px]" alt="" />
             </Link>
           </div>
@@ -126,7 +126,7 @@ const Navbar = () => {
                 ) : (
                   <>
                     <Link to="/signin">
-                      <Button variant="outline" className="w-full">Sign In</Button>
+                      <Button variant="outline" className="w-full mb-3">Sign In</Button>
                     </Link>
                     <Link to="/login">
                       <Button className="w-full">Login</Button>

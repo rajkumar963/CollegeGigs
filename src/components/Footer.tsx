@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-white">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold">Thestartupwallah</h3>
+            <h3 className="text-xl font-bold">The Startup Wallah</h3>
             <p className="text-sm opacity-80">
               Connecting ambitious startups with experienced investors to create
               successful ventures.
@@ -131,7 +131,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-white/10">
           <div className="text-center text-sm text-white/60">
-            <p>© 2025 Thestartupwallah. All rights reserved.</p>
+            <p>© 2025 TheStartupWallah. All rights reserved.</p>
           </div>
         </div>
       </div>
