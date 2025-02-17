@@ -8,7 +8,6 @@ const cards = [
     title: "Connect with Investors Ready to Support You",
     description:
       "Present your unique business ideas and gain access to investors eager to foster growth in emerging startups like yours.",
-    icon: <Mail className="text-blue-600 w-6 h-6" />,
     buttonText: "Get Started",
   },
   {
@@ -17,7 +16,6 @@ const cards = [
     title: "Unlock Resources Crafted for Your Success",
     description:
       "Leverage our extensive library of e-books filled with actionable insights that will guide your startup to new heights.",
-    icon: <Search className="text-blue-600 w-6 h-6" />,
     buttonText: "Explore",
   },
   {
@@ -26,7 +24,6 @@ const cards = [
     title: "Expert Mentorship to Guide Your Growth",
     description:
       "Gain insights from seasoned mentors who help you navigate the startup landscape, overcoming challenges with strategic support.",
-    icon: <Phone className="text-blue-600 w-6 h-6" />,
     buttonText: "Learn More",
   },
 ];
@@ -50,9 +47,6 @@ const CardSection: React.FC = () => {
             <button className="mt-auto bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
               {card.buttonText}
             </button>
-            <div className="absolute bottom-[-20px] bg-white p-3 rounded-full shadow-md">
-              {card.icon}
-            </div>
           </div>
         ))}
       </div>

@@ -18,7 +18,7 @@ const Services: React.FC = () => {
   return (
     <section id="services" className="py-12 bg-gray-100 mt-12">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-800">Our Services</h2>
+        <h2 className="text-4xl font-bold text-gray-800 underline">Our Services</h2>
         <p className="text-gray-600 mt-2">Providing top-notch solutions for your business success.</p>
       </div>
 

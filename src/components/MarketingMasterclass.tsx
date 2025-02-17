@@ -35,12 +35,12 @@ const ExperienceSection: React.FC = () => {
       bgImage: "/images/startup-1.jpg",
     },
     {
-      heading: "2. Growth-Stage Startups",
+      heading: "2. Business Students",
       description: "Scale your business with strategic support, funding opportunities, and professional services tailored for expansion.",
       bgImage: "https://img.freepik.com/free-photo/urban-double-exposure-portrait_23-2149885648.jpg?uid=R187627718&ga=GA1.1.856026252.1735303750&semt=ais_authors_boost",
     },
     {
-      heading: "3. Investors & Mentors",
+      heading: "3. Professional ",
       description: "Connect with high-potential startups and shape the future of innovation through mentorship and strategic investments.",
       bgImage: "https://img.freepik.com/premium-photo/full-shot-business-rocket-man_23-2150613035.jpg?uid=R187627718&ga=GA1.1.856026252.1735303750&semt=ais_authors_boost",
     },

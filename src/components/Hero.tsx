@@ -25,7 +25,7 @@ const Hero = () => {
                 Other Services
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button size="lg" variant="outline" onClick={() => navigate("/investors")}>
+              <Button size="lg" variant="outline" className="bg-gray-150" onClick={() => navigate("/investors")}>
                 View Investors
               </Button>
             </div>
