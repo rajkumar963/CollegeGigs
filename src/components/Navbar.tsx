@@ -87,7 +87,7 @@ const Navbar = () => {
                   <Button variant="outline" className="mr-2">Sign In</Button>
                 </Link>
                 <Link to="/login">
-                  <Button>Login</Button>
+                  <Button >Login</Button>
                 </Link>
               </>
             )}
@@ -129,7 +129,7 @@ const Navbar = () => {
                       <Button variant="outline" className="w-full mb-3">Sign In</Button>
                     </Link>
                     <Link to="/login">
-                      <Button className="w-full">Login</Button>
+                      <Button className="w-full bg-blue-600 ">Login</Button>
                     </Link>
                   </>
                 )}

@@ -10,12 +10,12 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative z-10">
           <div className="text-center">
-            <span className="inline-block animate-fade-in px-4 py-1 mb-4 text-sm font-medium text-accent bg-accent/10 rounded-full">
+            <span className="inline-block animate-fade-in px-4 py-1 mb-4 text-sm font-medium text-blue-600 bg-blue-200 rounded-full">
               1800+  Investors Ready to Connect
             </span>
             <h1 className="animate-fade-up text-4xl sm:text-5xl md:text-6xl font-bold text-primary mb-6">
               Turn your startup vision into reality -
-               <span className="text-accent"> Begin with us!</span>
+               <span className="text-blue-600"> Begin with us!</span>
             </h1>
             <p className="animate-fade-up animation-delay-100 max-w-2xl mx-auto text-lg text-gray-600 mb-8">
               Every big business starts small. Take your first step today with our expert support!

@@ -8,7 +8,7 @@ import {Link} from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-primary to-accent mt-20">
+    <footer className="bg-gradient-to-r from-primary to-blue-700 mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-white">
           {/* Company Info */}
@@ -101,9 +101,9 @@ const Footer = () => {
             <h4 className="text-lg font-semibold">Get in Touch</h4>
             <Button
               variant="secondary"
-              className="w-full flex items-center justify-center gap-2"
+              className="w-full flex items-center justify-center gap-2 text-black"
             >
-              <Mail className="h-4 w-4" />
+              <Mail className="h-4 w-4 text-black" />
               Contact Us
             </Button>
             <div className="flex space-x-4 mt-4">

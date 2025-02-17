@@ -4,9 +4,6 @@ const AboutUs = () => {
         {/* Left Content */}
         <div className="md:w-1/2 text-left">
           <h3 className="text-xl font-semibold tracking-wide text-gray-500 uppercase">About Us</h3>
-          <h2 className="text-4xl font-bold text-gray-900 mt-2 leading-tight">
-          Turn your startup vision into reality - Begin with us!
-          </h2>
           <p className="text-gray-600 mt-4 text-lg">
             At The Startup Wallah, we bridge the gap between startups and success by providing investor access, learning resources, and expert-backed business services. With a database of 1,800+ investors, 
             visually structured e-books on Marketing, Entrepreneurship, and Tech, and premium services like web development, pitch decks, and business model structuring—all backed by expert mentorship—we 

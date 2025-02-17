@@ -1,95 +1,63 @@
+import React from "react";
+import { Mail, Search, Phone } from "lucide-react";
 
-import { ChevronRight, GraduationCap, Users } from "lucide-react";
-import { Button } from "./ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "./ui/card";
+const cards = [
+  {
+    id: 1,
+    image: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1739793466/Investor_sqou1w.jpg",
+    title: "Connect with Investors Ready to Support You",
+    description:
+      "Present your unique business ideas and gain access to investors eager to foster growth in emerging startups like yours.",
+    icon: <Mail className="text-blue-600 w-6 h-6" />,
+    buttonText: "Get Started",
+  },
+  {
+    id: 2,
+    image: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1739794030/businessman_xa1s8p.avif",
+    title: "Unlock Resources Crafted for Your Success",
+    description:
+      "Leverage our extensive library of e-books filled with actionable insights that will guide your startup to new heights.",
+    icon: <Search className="text-blue-600 w-6 h-6" />,
+    buttonText: "Explore",
+  },
+  {
+    id: 3,
+    image: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1739793466/group_ywbyd6.jpg",
+    title: "Expert Mentorship to Guide Your Growth",
+    description:
+      "Gain insights from seasoned mentors who help you navigate the startup landscape, overcoming challenges with strategic support.",
+    icon: <Phone className="text-blue-600 w-6 h-6" />,
+    buttonText: "Learn More",
+  },
+];
 
-const StartupMentorship = () => {
+const CardSection: React.FC = () => {
   return (
-    <section className="py-20 px-4">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl font-bold mb-4 text-primary">Startup Mentorship</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Receive expert guidance from seasoned entrepreneurs and industry leaders who have successfully navigated the startup landscape. Our mentorship program offers personalized advice and insights to help you overcome challenges and make informed decisions.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <Card className="animate-fade-up" style={{ animationDelay: "100ms" }}>
-            <CardHeader>
-              <div className="flex items-center gap-4">
-                <Users className="w-8 h-8 text-accent" />
-                <div>
-                  <CardTitle className="text-xl mb-2">1-on-1 Mentorship</CardTitle>
-                  <CardDescription>
-                    Personalized guidance tailored to your startup's needs
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-3">
-                <li className="flex items-center gap-2">
-                  <ChevronRight className="h-4 w-4 text-accent" />
-                  <span>Weekly mentoring sessions</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <ChevronRight className="h-4 w-4 text-accent" />
-                  <span>Strategic business planning</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <ChevronRight className="h-4 w-4 text-accent" />
-                  <span>Industry-specific insights</span>
-                </li>
-              </ul>
-            </CardContent>
-          </Card>
-
-          <Card className="animate-fade-up" style={{ animationDelay: "200ms" }}>
-            <CardHeader>
-              <div className="flex items-center gap-4">
-                <GraduationCap className="w-8 h-8 text-accent" />
-                <div>
-                  <CardTitle className="text-xl mb-2">Group Sessions</CardTitle>
-                  <CardDescription>
-                    Learn and network with fellow entrepreneurs
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-3">
-                <li className="flex items-center gap-2">
-                  <ChevronRight className="h-4 w-4 text-accent" />
-                  <span>Monthly group workshops</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <ChevronRight className="h-4 w-4 text-accent" />
-                  <span>Peer learning opportunities</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <ChevronRight className="h-4 w-4 text-accent" />
-                  <span>Networking events</span>
-                </li>
-              </ul>
-            </CardContent>
-          </Card>
-        </div>
-
-        {/* <div className="text-center mt-12">
-          <Button className="bg-accent hover:bg-accent/90">
-            Schedule a Mentorship Call
-          </Button>
-        </div> */}
+    <div className="bg-gray-100 px-4 sm:px-6 py-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        {cards.map((card) => (
+          <div
+            key={card.id}
+            className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center relative"
+          >
+            <img
+              src={card.image}
+              alt={card.title}
+              className="rounded-lg w-full h-48 object-cover mb-4"
+            />
+            <h3 className="text-lg font-semibold mb-2">{card.title}</h3>
+            <p className="text-gray-600 text-sm mb-4">{card.description}</p>
+            <button className="mt-auto bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+              {card.buttonText}
+            </button>
+            <div className="absolute bottom-[-20px] bg-white p-3 rounded-full shadow-md">
+              {card.icon}
+            </div>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
 
-export default StartupMentorship;
+export default CardSection;

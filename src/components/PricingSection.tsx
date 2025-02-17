@@ -69,7 +69,7 @@ const PricingSection = () => {
               key={plan.name}
               className={`relative animate-fade-up ${
                 plan.popular
-                  ? "border-accent shadow-lg scale-105"
+                  ? "border-blue-600 shadow-lg scale-105"
                   : "border-border"
               }`}
               style={{
@@ -78,7 +78,7 @@ const PricingSection = () => {
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <span className="bg-accent text-white px-3 py-1 rounded-full text-sm font-medium">
+                  <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
                     Most Popular
                   </span>
                 </div>
@@ -103,8 +103,8 @@ const PricingSection = () => {
               </CardContent>
               <CardFooter>
                 <Button
-                  className={`w-full ${
-                    plan.popular ? "bg-accent hover:bg-accent/90" : ""
+                  className={`w-full bg-blue-600  text-white${
+                    plan.popular ? "bg-accent text-white" : ""
                   }`}
                 >
                   Get Started
