@@ -1,5 +1,4 @@
 import React from "react";
-import { Mail, Search, Phone } from "lucide-react";
 
 const cards = [
   {

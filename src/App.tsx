@@ -12,7 +12,7 @@ import Services from "./components/NavbarFeatures/Services";
 import InvestorDetails from "./components/NavbarFeatures/InvestorDetails";
 import Login from "./pages/Login/Login";
 import Signin from "./pages/Signin/Signin";
-import PitchDeckSection from "./components/PitchDeckSection";
+import PitchDeckSection from "./components/NavbarFeatures/Services/PitchDeckSection";
 import WebsiteSection from "./components/NavbarFeatures/Services/WebsiteSection";
 import Business from "./components/NavbarFeatures/Services/Business";
 import LogoDesign from "./components/NavbarFeatures/Services/LogoDesign";

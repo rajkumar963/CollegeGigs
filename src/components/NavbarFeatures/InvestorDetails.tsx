@@ -11,13 +11,13 @@ const investors: Investor[] = [
   {
     name: "Elon Musk",
     company: "Tesla, SpaceX",
-    bio: "Tech visionary and entrepreneur with investments in AI and renewable energy.",
+    bio: "Tech visionary and entrepreneur with investments in AI.",
     image: "https://img.freepik.com/premium-vector/office-worker-wearing-glasses_277909-81.jpg?ga=GA1.1.856026252.1735303750&semt=ais_authors_boost",
   },
   {
     name: "Warren Buffett",
     company: "Berkshire Hathaway",
-    bio: "Legendary investor focused on long-term value and financial growth.",
+    bio: "Legendary investor focused on long-term value.",
     image: "https://img.freepik.com/free-photo/smiling-woman-glasses_23-2147767429.jpg?ga=GA1.1.856026252.1735303750&semt=ais_authors_boost",
   },
   {
@@ -65,7 +65,7 @@ const investors: Investor[] = [
   {
     name: "Peter Thiel",
     company: "PayPal, Palantir",
-    bio: "Early investor in Facebook, investing in fintech and AI-driven security.",
+    bio: "Early investor in Facebook, investing in fintech and AI-driven .",
     image: "https://img.freepik.com/premium-vector/office-worker-wearing-glasses_277909-81.jpg?ga=GA1.1.856026252.1735303750&semt=ais_authors_boost",
   },
   {
@@ -91,24 +91,25 @@ const investors: Investor[] = [
 const InvestorDetails: React.FC = () => {
   return (
     <section id="investors" className="py-12 bg-gray-100 mt-12">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-8xl mx-auto px-5">
         <h2 className="text-4xl font-bold text-center text-gray-800 mb-10 underline">
           Meet Our Investors
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 ">
           {investors.map((investor, index) => (
             <div
               key={index}
-              className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-center text-center hover:shadow-2xl transition transform hover:scale-105"
+              className="bg-white shadow-lg rounded-xl w-[250px] p-6 flex flex-col items-center text-center hover:shadow-2xl transition transform hover:scale-105"
             >
               <img
                 src={investor.image}
                 alt={investor.name}
-                className="w-24 h-24 rounded-full object-cover mb-4"
+                className="w-20 h-20 rounded-full object-cover mb-3"
               />
               <h3 className="text-xl font-semibold text-gray-800">{investor.name}</h3>
-              <p className="text-blue-600 italic w-80 ">{investor.company}</p>
-              <p className="text-gray-700 mt-1 w-55">{investor.bio}</p>
+              <p className="text-blue-600 italic ">{investor.company}</p>
+              <p className="text-gray-700 mt-1 w-[240px]">{investor.bio}</p>
+              <button className="bg-blue-600 text-white mt-5 px-4 py-2 rounded-md hover:bg-blue-700 transition">view</button>
             </div>
           ))}
         </div>
