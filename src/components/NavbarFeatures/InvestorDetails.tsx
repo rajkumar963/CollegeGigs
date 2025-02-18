@@ -12,19 +12,19 @@ const investors: Investor[] = [
     name: "Elon Musk",
     company: "Tesla, SpaceX",
     bio: "Tech visionary and entrepreneur with investments in AI.",
-    image: "https://img.freepik.com/premium-vector/office-worker-wearing-glasses_277909-81.jpg?ga=GA1.1.856026252.1735303750&semt=ais_authors_boost",
+    image: "https://img.freepik.com/premium-vector/office-worker-wearing-glasses_277909-81.jpg",
   },
   {
     name: "Warren Buffett",
     company: "Berkshire Hathaway",
     bio: "Legendary investor focused on long-term value.",
-    image: "https://img.freepik.com/free-photo/smiling-woman-glasses_23-2147767429.jpg?ga=GA1.1.856026252.1735303750&semt=ais_authors_boost",
+    image: "https://img.freepik.com/free-photo/smiling-woman-glasses_23-2147767429.jpg",
   },
   {
     name: "Mark Cuban",
     company: "Shark Tank, Dallas Mavericks",
     bio: "Entrepreneur and investor with interests in AI, blockchain, and sports.",
-    image: "https://img.freepik.com/premium-photo/portrait-beautiful-businesswoman_23-2148816856.jpg?ga=GA1.1.856026252.1735303750&semt=ais_authors_boost",
+    image: "https://img.freepik.com/premium-photo/portrait-beautiful-businesswoman_23-2148816856.jpg",
   },
   {
     name: "Jeff Bezos",
@@ -90,26 +90,24 @@ const investors: Investor[] = [
 
 const InvestorDetails: React.FC = () => {
   return (
-    <section id="investors" className="py-12 bg-gray-100 mt-12">
-      <div className="max-w-8xl mx-auto px-5">
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-10 underline">
-          Meet Our Investors
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 ">
+    <section id="investors" className="py-16 bg-gradient-to-b from-gray-100 to-gray-300 mt-12">
+      <div className="max-w-7xl mx-auto px-6">
+        <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-12 underline decoration-blue-500">Meet Our Investors</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
           {investors.map((investor, index) => (
             <div
               key={index}
-              className="bg-white shadow-lg rounded-xl w-[250px] p-6 flex flex-col items-center text-center hover:shadow-2xl transition transform hover:scale-105"
+              className="bg-white shadow-xl rounded-xl w-70 p-6 flex flex-col items-center text-center transition transform hover:scale-105 hover:shadow-2xl"
             >
               <img
                 src={investor.image}
                 alt={investor.name}
-                className="w-20 h-20 rounded-full object-cover mb-3"
+                className="w-24 h-24 rounded-full object-cover border-4 border-blue-500 mb-4"
               />
-              <h3 className="text-xl font-semibold text-gray-800">{investor.name}</h3>
-              <p className="text-blue-600 italic ">{investor.company}</p>
-              <p className="text-gray-700 mt-1 w-[240px]">{investor.bio}</p>
-              <button className="bg-blue-600 text-white mt-5 px-4 py-2 rounded-md hover:bg-blue-700 transition">view</button>
+              <h3 className="text-xl font-semibold text-gray-900">{investor.name}</h3>
+              <p className="text-blue-600 italic w-80">{investor.company}</p>
+              <p className="text-gray-700 mt-2 w-70">{investor.bio}</p>
+              <button className="mt-4 px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">View Profile</button>
             </div>
           ))}
         </div>
