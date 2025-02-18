@@ -19,13 +19,13 @@ const services = [
     title: "Business Plan Services",
     description: "Developing detailed business plans to guide startups and enterprises.",
     link: "/services/business",
-    img: "https://img.freepik.com/free-photo/standard-quality-control-concept-m_23-2150041850.jpg?uid=R187627718&ga=GA1.1.856026252.1735303750&semt=ais_hybrid",
+    img: "https://img.freepik.com/free-vector/business-people-illustration_52683-34772.jpg?t=st=1739902440~exp=1739906040~hmac=67b77f245ada749632efcaf77ba7676b218a4adabf354dc8bdf5fbdf300007be&w=996",
   },
   {
     title: "Logo Design Services",
     description: "Creating unique and professional logo designs tailored to your brand identity.",
     link: "/services/logodesign",
-    img: "https://img.freepik.com/free-vector/colorful-graphic-concept-with-er-his-workplace-blue-3d_1284-26979.jpg?uid=R187627718&ga=GA1.1.856026252.1735303750&semt=ais_hybrid",
+    img: "https://img.freepik.com/premium-vector/modern-web-graphics-pack-vector-eps_1348508-20.jpg?uid=R187627718&ga=GA1.1.856026252.1735303750&semt=ais_hybrid",
   },
 ];
 

@@ -32,17 +32,17 @@ const ExperienceSection: React.FC = () => {
     {
       heading: "1. Aspiring Entrepreneurs",
       description: "Perfect for those ready to transform their innovative ideas into scalable ventures. Get access to essential resources and expert guidance.",
-      bgImage: "/images/startup-1.jpg",
+      bgImage: "https://img.freepik.com/premium-photo/concept-startup-with-rocket-shape-hole-wall-which-alludes-departure-towards-new-goals_207634-1607.jpg?uid=R187627718&ga=GA1.1.856026252.1735303750&semt=ais_hybrid",
     },
     {
       heading: "2. Business Students",
       description: "Scale your business with strategic support, funding opportunities, and professional services tailored for expansion.",
-      bgImage: "https://img.freepik.com/free-photo/urban-double-exposure-portrait_23-2149885648.jpg?uid=R187627718&ga=GA1.1.856026252.1735303750&semt=ais_authors_boost",
+      bgImage: "https://img.freepik.com/premium-photo/successful-startup-concept_700248-996.jpg?uid=R187627718&ga=GA1.1.856026252.1735303750&semt=ais_hybrid",
     },
     {
       heading: "3. Professional ",
       description: "Connect with high-potential startups and shape the future of innovation through mentorship and strategic investments.",
-      bgImage: "https://img.freepik.com/premium-photo/full-shot-business-rocket-man_23-2150613035.jpg?uid=R187627718&ga=GA1.1.856026252.1735303750&semt=ais_authors_boost",
+      bgImage: "https://img.freepik.com/premium-photo/serious-confident-manager-working-late-night-hold-tablet_274222-20176.jpg?uid=R187627718&ga=GA1.1.856026252.1735303750&semt=ais_hybrid",
     },
   ];
 
