@@ -108,7 +108,7 @@ function Signin() {
 
                     {error && <p className='text-red-500 text-xs pb-1'>{error}</p>}
 
-                    <button type='submit' className='btn-primary'>Create an account</button>
+                    <button type='submit' className='btn-primary bg-blue-600 hover:bg-blue-700'>Create an account</button>
                 </form>
             </div>
         </div>

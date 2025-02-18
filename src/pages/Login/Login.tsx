@@ -75,7 +75,7 @@ function Login() {
 
                 {error && <p className='text-red-500 text-xs pb-1'>{error}</p>}
 
-                <button type='submit' className='btn-primary'>Login</button>
+                <button type='submit' className='btn-primary bg-blue-600 hover:bg-blue-700'>Login</button>
             </form>
         </div>
        </div>
