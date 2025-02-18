@@ -1,107 +1,60 @@
-import React, { useRef } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { FaLaptopCode, FaChartLine, FaBusinessTime, FaPaintBrush } from "react-icons/fa";
+import React from "react";
+import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
 
+const services = [
+  {
+    title: "Pitch Deck Services",
+    description: "Crafting compelling pitch decks to attract investors and secure funding.",
+    link: "/services/pitch-deck",
+    img: "https://img.freepik.com/free-vector/business-landing-page-with-illustrated-men_23-2148286817.jpg?uid=R187627718&ga=GA1.1.856026252.1735303750&semt=ais_hybrid",
+  },
+  {
+    title: "Website Services",
+    description: "Building responsive and high-performance websites for businesses and startups.",
+    link: "/services/website",
+    img: "https://img.freepik.com/free-vector/website-development-banner_33099-1687.jpg",
+  },
+  {
+    title: "Business Plan Services",
+    description: "Developing detailed business plans to guide startups and enterprises.",
+    link: "/services/business",
+    img: "https://img.freepik.com/free-photo/standard-quality-control-concept-m_23-2150041850.jpg?uid=R187627718&ga=GA1.1.856026252.1735303750&semt=ais_hybrid",
+  },
+  {
+    title: "Logo Design Services",
+    description: "Creating unique and professional logo designs tailored to your brand identity.",
+    link: "/services/logodesign",
+    img: "https://img.freepik.com/free-vector/colorful-graphic-concept-with-er-his-workplace-blue-3d_1284-26979.jpg?uid=R187627718&ga=GA1.1.856026252.1735303750&semt=ais_hybrid",
+  },
+];
+
 const Services: React.FC = () => {
-  const pitchDeckRef = useRef<HTMLDivElement>(null);
-  const websiteRef = useRef<HTMLDivElement>(null);
-  const businessPlanRef = useRef<HTMLDivElement>(null);
-  const logoDesignRef = useRef<HTMLDivElement>(null);
-
   const navigate = useNavigate();
-
-  const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
-    ref.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
 
   return (
     <section id="services" className="py-12 bg-gray-100 mt-12">
-      <div className="max-w-5xl mx-auto text-center">
+      <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-gray-800 underline">Our Services</h2>
         <p className="text-gray-600 mt-2">Providing top-notch solutions for your business success.</p>
       </div>
 
-      <div className="mt-8 grid gap-6 md:grid-cols-3 px-6">
-        <Card className="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition">
-          <CardHeader>
-            <div className="flex justify-center">
-              <FaChartLine className="text-blue-600 text-4xl" />
-            </div>
-          </CardHeader>
-          <CardContent>
-            <CardTitle className="text-xl font-semibold text-gray-800">Pitch Deck Services</CardTitle>
-            <p className="text-gray-600 mt-2">
-              Crafting compelling pitch decks to attract investors and secure funding.
-            </p>
-            <button
-              onClick={() => navigate('/services/pitch-deck')}
-              className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
-            >
-              More Details
-            </button>
-          </CardContent>
-        </Card>
-
-        <Card className="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition">
-          <CardHeader>
-            <div className="flex justify-center">
-              <FaLaptopCode className="text-green-600 text-4xl" />
-            </div>
-          </CardHeader>
-          <CardContent>
-            <CardTitle className="text-xl font-semibold text-gray-800">Website Services</CardTitle>
-            <p className="text-gray-600 mt-2">
-              Building responsive and high-performance websites for businesses and startups.
-            </p>
-            <button
-              onClick={() => navigate('/services/website')}
-              className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
-            >
-              More Details
-            </button>
-          </CardContent>
-        </Card>
-
-        <Card className="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition">
-          <CardHeader>
-            <div className="flex justify-center">
-              <FaBusinessTime className="text-purple-600 text-4xl" />
-            </div>
-          </CardHeader>
-          <CardContent>
-            <CardTitle className="text-xl font-semibold text-gray-800">Business Plan Services</CardTitle>
-            <p className="text-gray-600 mt-2">
-              Developing detailed business plans to guide startups and enterprises.
-            </p>
-            <button
-              onClick={() => navigate('/services/business')}
-              className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
-            >
-              More Details
-            </button>
-          </CardContent>
-        </Card>
-
-        <Card className="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition">
-          <CardHeader>
-            <div className="flex justify-center">
-              <FaPaintBrush className="text-red-600 text-4xl" />
-            </div>
-          </CardHeader>
-          <CardContent>
-            <CardTitle className="text-xl font-semibold text-gray-800">Logo Design Services</CardTitle>
-            <p className="text-gray-600 mt-2">
-              Creating unique and professional logo designs tailored to your brand identity.
-            </p>
-            <button
-              onClick={() => navigate('/services/logodesign')}
-              className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
-            >
-              More Details
-            </button>
-          </CardContent>
-        </Card>
+      <div className="mt-8 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-6">
+        {services.map((service, index) => (
+          <Card key={index} className="bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-xl transition">
+            <img src={service.img} alt={service.title} className="w-full h-60 object-cover px-6 mt-6 rounded-lg" />
+            <CardContent className="p-6 text-center">
+              <CardTitle className="text-xl font-semibold text-gray-800">{service.title}</CardTitle>
+              <p className="text-gray-600 mt-2">{service.description}</p>
+              <button
+                onClick={() => navigate(service.link)}
+                className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+              >
+                More Details
+              </button>
+            </CardContent>
+          </Card>
+        ))}
       </div>
     </section>
   );

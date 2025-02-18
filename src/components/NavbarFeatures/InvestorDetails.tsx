@@ -92,7 +92,7 @@ const InvestorDetails: React.FC = () => {
   return (
     <section id="investors" className="py-16 bg-gradient-to-b from-gray-100 to-gray-300 mt-12">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-12 underline decoration-blue-500">Meet Our Investors</h2>
+        <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-12 underline ">Meet Our Investors</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
           {investors.map((investor, index) => (
             <div
