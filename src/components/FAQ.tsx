@@ -1,14 +1,14 @@
 import { useState } from "react";
 
 const faqs = [
-  { question: "Where is the National Portrait Gallery?", answer: "The National Portrait Gallery is located in London, UK." },
-  { question: "How do I get to the National Portrait Gallery?", answer: "You can reach the gallery via public transport, including the underground and buses." },
-  { question: "What are the Gallery's opening hours?", answer: "The gallery is open daily from 10 AM to 6 PM." },
-  { question: "Is photography allowed in the Gallery?", answer: "Photography is allowed but without flash." },
-  { question: "Who can I contact about lost property?", answer: "You can contact the gallery's help desk for lost property inquiries." },
-  { question: "Can I sketch in the Gallery?", answer: "Yes, sketching is allowed in designated areas." },
-  { question: "How can I be put on your mailing list?", answer: "You can sign up for the mailing list on the gallery's official website." },
-  { question: "Can I link to your website?", answer: "Yes, you can link to our website following our guidelines." }
+  { question: "What is The Startup Wallah?", answer: "The Startup Wallah is an extensive platform that bridges entrepreneurs with investors, resources, and expert-driven services to drive startup growth." },
+  { question: "How do I access the investor database?", answer: "Our platform offers access to a vetted database of 1,800+ investors, including LinkedIn profiles and email addresses, to assist startups in connecting with possible funding opportunities." },
+  { question: "What type of resources do you offer?", answer: "We provide e-books in picture form on Marketing, Entrepreneurship, and Technology for fast and efficient learning without requiring lengthy masterclasses." },
+  { question: "Can you help with website building and business strategy?", answer: "Photography is allowed but without flashYes, we have professional services, such as website building, pitch deck building, structuring business models, and sales funnel optimization, to assist startups to scale efficiently." },
+  { question: "How does The Startup Wallah aid in fundraising?", answer: " Though we do not invest directly, we endow startups with investor connections, pitch preparation, and business strategy insights that help them prepare for fundraising." },
+  { question: "Are your services free or paid?", answer: "We have free and premium services. Paid plans include investor data, advanced resources, and business support, while certain materials and insights are offered for free." },
+  { question: "Who can benefit from The Startup Wallah?", answer: "Entrepreneurs across any stage of the business cycle—be it early-stage start-ups or growing businesses—stand to gain from our investor base, learning modules, and professionally guided services." },
+  { question: "How do I begin?", answer: "Create an account on our platform, browse our investor base and learning resources, and take the initial step towards startup building and growing with the support you need." }
 ];
 
 const FAQ = () => {
@@ -30,7 +30,7 @@ const FAQ = () => {
               onClick={() => toggleFAQ(index)}
             >
               {faq.question}
-              <span>{activeIndex === index ? "▲" : "▼"}</span>
+              <span className="font-bold text-3xl">{activeIndex === index ? "-" : "+"}</span>
             </button>
             {activeIndex === index && (
               <p className="mt-2 text-gray-700">{faq.answer}</p>

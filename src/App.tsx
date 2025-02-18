@@ -9,15 +9,17 @@ import Resources from "./components/NavbarFeatures/Resources";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Services from "./components/NavbarFeatures/Services";
-// import Courses from "./components/NavbarFeatures/Courses";
 import InvestorDetails from "./components/NavbarFeatures/InvestorDetails";
 import Login from "./pages/Login/Login";
 import Signin from "./pages/Signin/Signin";
 import PitchDeckSection from "./components/PitchDeckSection";
 import WebsiteSection from "./components/NavbarFeatures/Services/WebsiteSection";
 import Business from "./components/NavbarFeatures/Services/Business";
-import FAQ from "./components/FAQ";
 import LogoDesign from "./components/NavbarFeatures/Services/LogoDesign";
+import MarketingEbookSection from "./components/Ebooks/MarketingEbookSection";
+import SalesEbookSection from "./components/Ebooks/SalesEbookSection";
+import EntrepreneurshipEbookSection from "./components/Ebooks/EntrepreneurshipEbookSection";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -39,7 +41,9 @@ const App = () => (
           <Route path="/login" element={<Login/>} />
           <Route path="/services/business" element={<Business/>} />
           <Route path="/services/logodesign" element={<LogoDesign/>} />
-          <Route path="/faq" element={<FAQ/>} />
+          <Route path="/resources/marketing" element={<MarketingEbookSection />} />
+          <Route path="/resources/sales" element={<SalesEbookSection />} />
+          <Route path="/resources/entrepreneurship" element={<EntrepreneurshipEbookSection />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer/>
