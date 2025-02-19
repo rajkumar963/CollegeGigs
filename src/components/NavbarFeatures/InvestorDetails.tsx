@@ -92,7 +92,34 @@ const InvestorDetails: React.FC = () => {
   return (
     <section id="investors" className="py-16 bg-gradient-to-b from-gray-100 to-gray-300 mt-12">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-12 underline ">Meet Our Investors</h2>
+        <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-6 underline ">Meet Our Investors</h2>
+        <h3 className="flex item-center justify-center mb-5 text-xl font-bold ">🚀 Traditional vs. Modern Fundraising – What’s Best for You?</h3>
+        <table className="w-full border-collapse border border-gray-300 mb-10 ">
+          <thead>
+            <tr className="bg-blue-600 text-white">
+              <th className="border border-gray-300 px-5 py-3">❌ The Old Way (Traditional Fundraising)</th>
+              <th className="border border-gray-300 px-5 py-3">✅ The Smarter Way (Modern Fundraising)</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr className=" border border-gray-300 bg-white">
+                <td className="border border-gray-300 px-8 py-3">🔴 Endless struggle to find the right investors</td>
+                <td className="border border-gray-300 px-8 py-3">💡 Instant Access – 1,800+ verified investors at your fingertips</td>
+              </tr>
+              <tr className=" border border-gray-300 bg-white">
+                <td className="border border-gray-300 px-8 py-3">🔴 Hours wasted on research instead of building your startup .</td>
+                <td className="border border-gray-300 px-8 py-3">📩 Direct Outreach – Email your pitch deck in just a few clicks </td>
+              </tr>
+              <tr className=" border border-gray-300 bg-white">
+                <td className="border border-gray-300 px-8 py-3">🔴 Sending 1000s of LinkedIn requests with little response</td>
+                <td className="border border-gray-300 px-8 py-3">⏳ Save Time – Focus on scaling, not chasing investors.</td>
+              </tr>
+              <tr className=" border border-gray-300 bg-white">
+                <td className="border border-gray-300 px-8 py-3">🔴 Losing 2% of your hard-earned funds in platform fees.</td>
+                <td className="border border-gray-300 px-8 py-3">💰 Keep 100% – No commissions, no hidden fees.  </td>
+              </tr>
+          </tbody>
+        </table>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
           {investors.map((investor, index) => (
             <div
