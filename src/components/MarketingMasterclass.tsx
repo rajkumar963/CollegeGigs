@@ -15,9 +15,9 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ heading, description, b
       }}
     >
       {/* Card Content */}
-      <div className="relative z-10 p-4 bg-opacity-70 rounded-lg">
+      <div className="relative z-10 bg-opacity-70 rounded-lg">
         <h2 className="text-xl md:text-2xl font-bold">{heading}</h2>
-        <p className="mt-2 text-md md:text-md leading-relaxed">{description}</p>
+        <p className="mt-2 text-sm md:text-md leading-relaxed">{description}</p>
       </div>
     </div>
   );
