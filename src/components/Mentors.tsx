@@ -21,7 +21,7 @@ const CardSection: React.FC = () => {
       description:
         "Leverage our extensive library of e-books filled with actionable insights that will guide your startup to new heights.",
       buttonText: "Learn More",
-      link: "/success-stories",
+      link: "/",
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ const CardSection: React.FC = () => {
       description:
         "Gain insights from seasoned mentors who help you navigate the startup landscape, overcoming challenges with strategic support.",
       buttonText: "Learn More",
-      link: "/success-stories",
+      link: "/",
     },
   ];
 
