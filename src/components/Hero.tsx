@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const Hero = () => {
   const navigate = useNavigate();
   return (
-    <div className="relative overflow-hidden pt-32 pb-20 h-screen flex items-center">
+    <div className="relative overflow-hidden pt-32 pb-20 h-[90vh] flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative z-10 ">
           <div className="text-center">
