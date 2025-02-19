@@ -71,7 +71,7 @@ function Signin() {
   return (
     <>
         <div className='flex items-center justify-center mt-28'>
-            <div className='w-96 border rounded bg-white px-7 py-10'>
+            <div className='w-96 border bg-white rounded bg-white px-7 py-10'>
                 <form onSubmit={handleSignup}>
                     <h4 className='text-2xl mb-7'>SignUp</h4>
 
