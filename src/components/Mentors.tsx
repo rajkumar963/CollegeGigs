@@ -1,81 +1,69 @@
 import React from "react";
-import { FaClock, FaCalendarAlt } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
-interface CourseCardProps {
-  title: string;
-  description: string;
-  hours: string;
-  schedule: string;
-  image: string;
-}
+const CardSection: React.FC = () => {
+  const navigate = useNavigate(); // Move useNavigate inside the component
 
-const courses: CourseCardProps[] = [
-  {
-    title: "Data Science and AI Bootcamp",
-    description:
-      "Includes: Python, Pandas, NumPy, Machine Learning, Data Visualization and more",
-    hours: "50 Hrs of Live Classes",
-    schedule: "Weekday Evenings",
-    image: "https://img.freepik.com/premium-vector/flat-world-photography-day-illustration_23-2149507701.jpg?ga=GA1.1.856026252.1735303750&semt=ais_authors_boost",
-  },
-  {
-    title: "Web Development Full Stack Course",
-    description:
-      "Includes: HTML, CSS, JavaScript, React, Node.js, Express, MongoDB and more",
-    hours: "120 Hrs of Live Classes",
-    schedule: "Weekend Classes",
-    image: "https://img.freepik.com/free-vector/website-development-banner_33099-1687.jpg",
-  },
-  {
-    title: "Cloud Computing Certification Course",
-    description:
-      "Includes: AWS, Azure, Google Cloud, DevOps, Docker, Kubernetes and more",
-    hours: "80 Hrs of Live Classes",
-    schedule: "Weekday Evenings",
-    image: "https://img.freepik.com/premium-vector/flat-world-photography-day-illustration_23-2149507701.jpg?ga=GA1.1.856026252.1735303750&semt=ais_authors_boost",
-  },
-];
+  const cards = [
+    {
+      id: 1,
+      image: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1739943961/Binny_Bansal_r08e7w.jpg",
+      title: "Journey of Sachin and Binny Bansal",
+      description:
+        "From IIT Dreams to Building an Empire: Thespiring Journey of Sachin and Binny Bansal.",
+      buttonText: "Learn More",
+      link: "/sachinbinnystory",
+    },
+    {
+      id: 2,
+      image: "https://img.freepik.com/premium-photo/asian-businessman-woman-suits-walking-side-by-side_180547-2301.jpg?w=996",
+      title: "Journey of Ratan Tata",
+      description:
+        "Leverage our extensive library of e-books filled with actionable insights that will guide your startup to new heights.",
+      buttonText: "Learn More",
+      link: "/success-stories",
+    },
+    {
+      id: 3,
+      image: "https://img.freepik.com/free-photo/two-elegant-indian-fashionable-mans-model-suit-posed-winter-day_627829-1636.jpg?uid=R187627718&ga=GA1.1.856026252.1735303750&semt=ais_hybrid",
+      title: "Journey of Ratan Tata",
+      description:
+        "Gain insights from seasoned mentors who help you navigate the startup landscape, overcoming challenges with strategic support.",
+      buttonText: "Learn More",
+      link: "/success-stories",
+    },
+  ];
 
-const CourseCard: React.FC<CourseCardProps> = ({
-  title,
-  description,
-  hours,
-  schedule,
-  image,
-}) => {
   return (
-    <div className="bg-white shadow-lg rounded-2xl p-6 w-full hover:shadow-xl transition flex flex-col mt-12">
-      <img src={image} alt={title} className="w-full h-48 object-cover" />
-      <div className="mt-4">
-        <h3 className="text-2xl font-bold text-gray-800">{title}</h3>
-        <p className="text-gray-600 mt-2">{description}</p>
-        <div className="mt-4 space-y-2">
-          <p className="flex items-center text-gray-700">
-            <FaCalendarAlt className="text-blue-600 mr-2" />
-            {schedule}
-          </p>
-        </div>
+    <div className="bg-gray-100 px-4 sm:px-6 py-8 mt-[65px]">
+      <h1 className="text-4xl font-bold mb-12 text-primary text-center underline">The Successful people stories</h1>
+      {/* <span className="text-xl mb-8 text-primary flex justify-center text-center">
+        We are providing E-books that are very precise and focus on core concepts from an application point of view.
+      </span> */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        {cards.map((card) => (
+          <div
+            key={card.id}
+            className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center relative"
+          >
+            <img
+              src={card.image}
+              alt={card.title}
+              className="rounded-md w-full h-55 object-cover mb-4"
+            />
+            <h3 className="text-2xl font-bold mb-2">{card.title}</h3>
+            <p className="text-gray-600 text-sm mb-4">{card.description}</p>
+            <button
+              onClick={() => navigate(card.link)}
+              className="mt-auto bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+            >
+              {card.buttonText}
+            </button>
+          </div>
+        ))}
       </div>
-      {/* <button className="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition mt-6">
-        View Course Details
-      </button> */}
     </div>
   );
 };
 
-const CourseList: React.FC = () => {
-  return (
-    <section className="py-12 bg-gray-100 mt-12">
-      <h1 className="text-4xl font-bold mb-2 text-primary text-center">The Successful people story's</h1>
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {courses.map((course, index) => (
-            <CourseCard key={index} {...course} />
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default CourseList;
+export default CardSection;

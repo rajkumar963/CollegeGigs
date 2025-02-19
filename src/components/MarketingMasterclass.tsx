@@ -31,17 +31,17 @@ const ExperienceSection: React.FC = () => {
   const experienceLevels = [
     {
       heading: "1. Aspiring Entrepreneurs",
-      description: "Perfect for those ready to transform their innovative ideas into scalable ventures. Get access to essential resources and expert guidance.",
+      description: "Access 1,800+ investors, step-by-step e-books on Marketing, Sales, and Entrepreneurship, and expert mentorship to build a solid foundation. Perfect for transforming innovative concepts into scalable ventures.",
       bgImage: "https://img.freepik.com/premium-photo/concept-startup-with-rocket-shape-hole-wall-which-alludes-departure-towards-new-goals_207634-1607.jpg?uid=R187627718&ga=GA1.1.856026252.1735303750&semt=ais_hybrid",
     },
     {
-      heading: "2. Business Students",
-      description: "Scale your business with strategic support, funding opportunities, and professional services tailored for expansion.",
+      heading: "2.  Business Students & Early-Stage Founders",
+      description: "Learn to scale smarter with frameworks for business model structuring, funding opportunities from our investor network, and actionable insights from industry experts.",
       bgImage: "https://img.freepik.com/premium-photo/successful-startup-concept_700248-996.jpg?uid=R187627718&ga=GA1.1.856026252.1735303750&semt=ais_hybrid",
     },
     {
-      heading: "3. Professional ",
-      description: "Connect with high-potential startups and shape the future of innovation through mentorship and strategic investments.",
+      heading: "3. Established Professionals & Innovators",
+      description: "Leverage premium services like web development, operational audits, and strategic investments to refine your vision. Ideal for leaders aiming to innovate or expand their impact.",
       bgImage: "https://img.freepik.com/premium-photo/serious-confident-manager-working-late-night-hold-tablet_274222-20176.jpg?uid=R187627718&ga=GA1.1.856026252.1735303750&semt=ais_hybrid",
     },
   ];
@@ -52,7 +52,7 @@ const ExperienceSection: React.FC = () => {
       <p className="text-md text-center ">We support entrepreneurs at every stage of their journey</p>
 
       {/* Desktop View */}
-      <div className="hidden md:flex justify-center gap-6 mt-[100px]">
+      <div className="hidden md:flex justify-center gap-6 mt-[50px]">
         {experienceLevels.map((exp, index) => (
           <div key={index} className="w-1/3">
             <ExperienceCard {...exp} />

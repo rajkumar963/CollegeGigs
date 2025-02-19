@@ -15,8 +15,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-xl font-bold">The Startup Wallah</h3>
             <p className="text-sm opacity-80">
-              Connecting ambitious startups with experienced investors to create
-              successful ventures.
+              At The Startup Wallah, we bridge the gap between startups and success by providing essential resources for growth.
             </p>
           </div>
 

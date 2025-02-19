@@ -19,6 +19,7 @@ import LogoDesign from "./components/NavbarFeatures/Services/LogoDesign";
 import MarketingEbookSection from "./components/Ebooks/MarketingEbookSection";
 import SalesEbookSection from "./components/Ebooks/SalesEbookSection";
 import EntrepreneurshipEbookSection from "./components/Ebooks/EntrepreneurshipEbookSection";
+import SachinBinnyStory from "./components/SuccessStory/SachinBinnyStory";
 
 const queryClient = new QueryClient();
 
@@ -43,6 +44,7 @@ const App = () => (
           <Route path="/resources/marketing" element={<MarketingEbookSection />} />
           <Route path="/resources/sales" element={<SalesEbookSection />} />
           <Route path="/resources/entrepreneurship" element={<EntrepreneurshipEbookSection />} />
+          <Route path="/sachinbinnystory" element={<SachinBinnyStory/>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer/>

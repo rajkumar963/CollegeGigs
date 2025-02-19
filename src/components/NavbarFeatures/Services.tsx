@@ -37,6 +37,7 @@ const Services: React.FC = () => {
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-gray-800 underline">Our Services</h2>
         <p className="text-gray-600 mt-2">Providing top-notch solutions for your business success.</p>
+        
       </div>
 
       <div className="mt-8 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-6">
