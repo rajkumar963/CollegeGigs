@@ -28,17 +28,17 @@ const ExperienceSection: React.FC = () => {
     {
       heading: "1. Aspiring Entrepreneurs",
       description: "Access 1,800+ investors, step-by-step e-books on Marketing, Sales, and Entrepreneurship, and expert mentorship to build a solid foundation. Perfect for transforming innovative concepts into scalable ventures.",
-      bgImage: "https://img.freepik.com/premium-photo/concept-startup-with-rocket-shape-hole-wall-which-alludes-departure-towards-new-goals_207634-1607.jpg",
+      bgImage: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1740047824/concept_tlvlrg.avif",
     },
     {
       heading: "2. Business Students & Early-Stage Founders",
       description: "Learn to scale smarter with frameworks for business model structuring, funding opportunities from our investor network, and actionable insights from industry experts.",
-      bgImage: "https://img.freepik.com/premium-photo/successful-startup-concept_700248-996.jpg",
+      bgImage: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1740047824/successful-startup_fufkgb.avif",
     },
     {
       heading: "3. Established Professionals & Innovators",
       description: "Leverage premium services like web development, operational audits, and strategic investments to refine your vision. Ideal for leaders aiming to innovate or expand their impact.",
-      bgImage: "https://img.freepik.com/premium-photo/serious-confident-manager-working-late-night-hold-tablet_274222-20176.jpg",
+      bgImage: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1740047824/serious-confident_gvlp6q.avif",
     },
   ];
 

@@ -2,7 +2,7 @@ import React from "react";
 
 const SachinBinnyStory: React.FC = () => {
   return (
-    <div className="max-w-5xl mx-auto p-6 mt-[5rem] ">
+    <div className="max-w-5xl mx-auto p-6 mt-[5rem] leading-relaxed text-justify ">
       <h1 className="text-3xl font-bold mb-3 flex justify-center items-center">
         From IIT Dreams to Building an Empire: The Inspiring Journey of Sachin and Binny Bansal.</h1>
             <span className="block text-start font-semibold mb-8">
@@ -103,16 +103,78 @@ const SachinBinnyStory: React.FC = () => {
                     <li><strong>Logistics Boost: </strong> Built warehouses and strengthened delivery networks across India.</li>
                     <li><strong>Customer Growth:</strong>User base skyrocketed from 10,000 to over 1 million within a year.</li>
                 </ul>
-            </p>
-            
-        </ul>
-        
-      
-      {/* <h2 className="text-xl font-bold mt-8 mb-4">3. Key Elements of a Pitch Deck</h2>
+            </p>  
+        </ul> 
+      <h2 className="text-xl font-bold mt-8 mb-4">4. Key Insights from Their Early Funding Journey</h2>
       <ul className="list-disc pl-5 space-y-3">
-        <li><strong>Intensified Pitch Summary:</strong> The first slides should clearly communicate the company idea and goal.</li>
-        <li><strong>Team Building:</strong> Investors value knowledgeable and committed staff; highlight your team.</li>
-      </ul> */}
+        <li><strong>1. Start Small, Prove Big:</strong> The Bansals bootstrapped for 2 years (2007–2009) to validate their model before seeking external capital.</li>
+        <li><strong>2.Investor Trust = Market Trust:</strong> Accel India’s $1 million bet signaled confidence in Flipkart’s potential to disrupt India’s retail landscape.</li>
+        <li><strong>3.Strategic Partnerships :</strong> Tiger Global’s investment wasn’t just about money—it brought global expertise and credibility, attracting future investors like Naspers and Morgan Stanley.</li>
+      </ul>
+
+      <h2 className="text-xl font-bold mb-3 mt-4">5. What the Founders Said</h2>
+        <ul className="list-disc pl-5 space-y-3">
+            <span> 
+                <b>Sachin Bansal reflected on the early days:-- </b>
+                When Accel believed in us, it wasn’t just about the money. It was about someone
+                saying, ‘We trust your vision for India.’ That kept us going through the toughest
+                times.”* <br />
+                Subrata Mitra (Partner, Accel India) added:
+                “We saw two passionate founders solving a real problem—making shopping
+                accessible for millions. Their hustle and focus on customer experience
+                convinced us to take the leap.”<br /> <br />
+            </span>
+            <span>
+                <b>The Ripple Effect:--</b> 
+                Flipkart’s early funding success:- <br />
+                - Paved the way for India’s startup ecosystem to attract global investors. <br />
+                - Inspired future unicorns like Ola, Swiggy, and Byju’s to dream big.
+
+            </span>
+        </ul>
+      <h2 className="text-xl font-bold mb-3 mt-4">6. Key Lessons from Their Journey</h2>
+        <ul className="list-disc pl-5 space-y-3">
+            <span> 
+             The story of Sachin and Binny Bansal offers invaluable lessons for anyone
+             aspiring to achieve greatness:
+            </span> <br /> 
+            <span>
+                <b>1. Identify a Need:</b>  They recognized the untapped potential of e-commerce in
+                India and filled a critical gap in the market.
+            </span><br />
+            <span>
+                <b>2.Customer-Centric Approach: </b> By prioritizing customer satisfaction, they built
+                trust and loyalty, which became the foundation of their success.
+            </span> <br />
+            <span>
+                <b>3. Adaptability:</b> They adapted to the unique challenges of the Indian market,
+                finding innovative solutions to overcome obstacles.
+            </span> <br />
+            <span>
+               <b>4. Resilience:</b> Despite setbacks, they remained steadfast in their vision, turning
+                challenges into opportunities for growth
+            </span>
+        </ul>
+      <h2 className="text-xl font-bold mb-3 mt-4">7. Conclusion: A Legacy of Inspiration</h2>
+        <ul className="list-disc pl-5 space-y-3">
+            <span> 
+                Sachin and Binny Bansal's journey, much like Alakh Pandey's, is a shining
+                example of how passion, perseverance, and a deep understanding of the market
+                can transform dreams into reality. Their story reminds us that success is not just
+                about achieving personal goals—it's about creating a lasting impact on society.
+            </span> <br /> <br />
+            <span>
+                At The startup Wallah, we believe in celebrating such stories of triumph and
+                resilience. They inspire us to dream bigger, work harder, and never give up on
+                our aspirations. Because, as Sachin and Binny Bansal have shown us, the journey
+                to success is as rewarding as the destination itself.
+            </span><br /> <br />
+            <span>
+                Let their story be a reminder that no dream is too big, and no obstacle is too
+                great. Start your journey today, and who knows? You might just be the next
+                success story we celebrate.
+            </span>
+        </ul>
     </div>
   );
 };

@@ -16,12 +16,12 @@ const CardSection: React.FC = () => {
     },
     {
       id: 2,
-      image: "https://img.freepik.com/premium-photo/asian-businessman-woman-suits-walking-side-by-side_180547-2301.jpg?w=996",
-      title: "Journey of Ratan Tata",
+      image: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1740047824/Ritesh-Agarwal-Success-Story-2023_jnwbq2.webp",
+      title: "The Journey of Ritesh Agarwal and OYO Rooms",
       description:
-        "Leverage our extensive library of e-books filled with actionable insights that will guide your startup to new heights.",
+        "Ritesh Agarwal grew up in Odisha with big dreams and an entrepreneurial spirit. Unlike most kids his age.",
       buttonText: "Learn More",
-      link: "/",
+      link: "/riteshstory",
     },
     {
       id: 3,
@@ -49,7 +49,7 @@ const CardSection: React.FC = () => {
             <img
               src={card.image}
               alt={card.title}
-              className="rounded-md w-full h-55 object-cover mb-4"
+              className="rounded-md w-full h-50 object-cover mb-4"
             />
             <h3 className="text-2xl font-bold mb-2">{card.title}</h3>
             <p className="text-gray-600 text-sm mb-4">{card.description}</p>

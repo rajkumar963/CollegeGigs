@@ -1,15 +1,18 @@
+import { useNavigate } from "react-router-dom";
+
 const AboutUs = () => {
+  const navigate = useNavigate();
     return (
       <section id="about-us" className="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto py-12 px-6">
         {/* Left Content */}
         <div className="md:w-1/2 text-left">
           <h3 className="text-4xl font-bold tracking-wide text-gray-900 uppercase">About Us</h3>
           <p className="text-gray-600 mt-4 text-lg">
-            At <span className="text-blue-600 font-bold">The Startup Wallah</span>, we bridge the gap between startups and success by providing investor access, learning resources, and expert-backed business services. With a database of 1,800+ investors, 
+            At <span className="text-blue-600 font-bold leading-relaxed text-justify">The Startup Wallah</span>, we bridge the gap between startups and success by providing investor access, learning resources, and expert-backed business services. With a database of investors, 
             visually structured e-books on Marketing, Entrepreneurship, sales, and premium services like web development, pitch decks, and business model structuring—all backed by expert mentorship—we 
             equip startups with everything they need to grow.
           </p>
-          <button className="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">
+          <button onClick={() => navigate("/signin")} className="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">
             Sign Up for Free
           </button>
         </div>

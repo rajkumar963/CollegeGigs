@@ -1,4 +1,3 @@
-
 import { Check } from "lucide-react";
 import { Button } from "./ui/button";
 import {
@@ -13,7 +12,8 @@ import {
 const plans = [
   {
     name: "Starter",
-    price: "Free",
+    price: "₹0",
+    oldPrice: "₹99",
     description: "Perfect for early-stage startups",
     features: [
       "Access to full search and filtering of investors",
@@ -25,7 +25,8 @@ const plans = [
   },
   {
     name: "Pro",
-    price: "₹599",
+    price: "₹0",
+    oldPrice: "₹999",
     description: "Ideal for growing businesses",
     features: [
       "50 profile views per month",
@@ -38,7 +39,8 @@ const plans = [
   },
   {
     name: "Pro+",
-    price: "₹1,499",
+    price: "₹0",
+    oldPrice: "₹2,499",
     description: "For established companies",
     features: [
       "300 profile views per month",
@@ -89,8 +91,8 @@ const PricingSection = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="text-4xl font-bold text-primary">
-                  {plan.price}
-                  {plan.price !== "Free" && <span className="text-base font-normal text-muted-foreground">/mo</span>}
+                  <span className="line-through text-red-500 mr-2">{plan.oldPrice}</span>{plan.price}
+                  {plan.price !== "₹0" && <span className="text-base font-normal text-muted-foreground">/mo</span>}
                 </div>
                 <ul className="space-y-3">
                   {plan.features.map((feature) => (
@@ -103,8 +105,8 @@ const PricingSection = () => {
               </CardContent>
               <CardFooter>
                 <Button
-                  className={`w-full bg-blue-600  text-white${
-                    plan.popular ? "bg-accent text-white" : ""
+                  className={`w-full bg-blue-600 text-white${
+                    plan.popular ? " bg-blue-600 text-white" : ""
                   }`}
                 >
                   Get Started

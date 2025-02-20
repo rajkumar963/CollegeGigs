@@ -20,6 +20,7 @@ import MarketingEbookSection from "./components/Ebooks/MarketingEbookSection";
 import SalesEbookSection from "./components/Ebooks/SalesEbookSection";
 import EntrepreneurshipEbookSection from "./components/Ebooks/EntrepreneurshipEbookSection";
 import SachinBinnyStory from "./components/SuccessStory/SachinBinnyStory";
+import RiteshStory from "./components/SuccessStory/RiteshStory";
 
 const queryClient = new QueryClient();
 
@@ -45,6 +46,7 @@ const App = () => (
           <Route path="/resources/sales" element={<SalesEbookSection />} />
           <Route path="/resources/entrepreneurship" element={<EntrepreneurshipEbookSection />} />
           <Route path="/sachinbinnystory" element={<SachinBinnyStory/>} />
+          <Route path="/riteshstory" element={<RiteshStory/>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer/>
