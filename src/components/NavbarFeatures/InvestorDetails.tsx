@@ -164,7 +164,7 @@ const InvestorDetails: React.FC = () => {
               />
               <h3 className="text-lg font-semibold text-gray-900">{investor.name}</h3>
               <p className="text-blue-600 font-medium italic">{investor.company}</p>
-              <p className="text-gray-700 mt-2">{investor.bio}</p>
+              <p className="text-gray-700 mt-2 ">{investor.bio}</p>
               <button className="mt-4 px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
                 View Profile
               </button>

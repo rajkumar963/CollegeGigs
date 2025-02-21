@@ -40,7 +40,7 @@ const ServicesSection: React.FC = () => {
             <div key={index} className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-center text-center hover:shadow-xl transition">
               {service.icon}
               <h3 className="text-xl font-semibold text-gray-800 mt-4">{service.title}</h3>
-              <p className="text-gray-600 mt-2">{service.description}</p>
+              <p className="text-gray-600 mt-2 leading-relaxed text-justify">{service.description}</p>
             </div>
           ))}
         </div>

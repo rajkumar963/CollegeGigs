@@ -35,7 +35,7 @@ const Hero = () => {
   }, [index, displayText, isDeleting, fullText]);
 
   return (
-    <div className="relative overflow-hidden pt-32 pb-20 h-[80vh] flex items-center">
+    <div className="relative overflow-hidden pt-32 pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative z-10">
           <div className="text-center">

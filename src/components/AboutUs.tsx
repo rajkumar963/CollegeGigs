@@ -7,8 +7,8 @@ const AboutUs = () => {
         {/* Left Content */}
         <div className="md:w-1/2 text-left">
           <h3 className="text-4xl font-bold tracking-wide text-gray-900 uppercase">About Us</h3>
-          <p className="text-gray-600 mt-4 text-lg">
-            At <span className="text-blue-600 font-bold leading-relaxed text-justify">The Startup Wallah</span>, we bridge the gap between startups and success by providing investor access, learning resources, and expert-backed business services. With a database of investors, 
+          <p className="text-gray-600 mt-4 text-lg leading-relaxed text-justify">
+            At <span className="text-blue-600 font-bold ">The Startup Wallah</span>, we bridge the gap between startups and success by providing investor access, learning resources, and expert-backed business services. With a database of investors, 
             visually structured e-books on Marketing, Entrepreneurship, sales, and premium services like web development, pitch decks, and business model structuring—all backed by expert mentorship—we 
             equip startups with everything they need to grow.
           </p>
@@ -21,9 +21,9 @@ const AboutUs = () => {
         <div className="md:w-1/2 flex justify-center mt-8 md:mt-0 relative  ">
           <div className="relative">
             <img
-              src="https://res.cloudinary.com/dsdcta1sr/image/upload/v1739704193/Business_Plan-cuate_cmvfjr.svg" 
+              src="https://img.freepik.com/premium-vector/picture-people-room-with-man-woman-sitting-desk_220346-8429.jpg?w=1800" 
               alt="Person working on a laptop"
-              className="rounded-lg w-[500px] h-[450px] object-cover"
+              className="rounded w-[500px] h-[450px] object-cover"
             />
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r  via-transparent to-transparent opacity-30 rounded-lg"></div>
           </div>

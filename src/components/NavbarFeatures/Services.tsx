@@ -34,10 +34,10 @@ const Services: React.FC = () => {
 
   return (
     <section id="services" className="py-12 bg-gray-100 mt-12">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-800 underline">Our Services</h2>
-        <p className="text-gray-600 mt-2">Providing top-notch solutions for your business success.</p>
-        
+      <div className="max-w-6xl mx-auto leading-relaxed text-justify ">
+        <h2 className="text-4xl font-bold text-gray-800 underline text-center">Our Services</h2>
+        <p className="text-gray-600 mt-2 mb-5 text-center">Providing top-notch solutions for your business success.</p>
+        <p>At The Startup Wallah, we're not just service providers; we're partners in your startup's journey. We understand the unique challenges and opportunities startups face, and our premium business services are designed to address them head-on. We offer expert-backed support in web development, pitch deck creation, business model structuring, and sales funnel development, empowering you to build a strong foundation for sustainable growth.</p>
       </div>
 
       <div className="mt-8 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-6">
@@ -46,7 +46,7 @@ const Services: React.FC = () => {
             <img src={service.img} alt={service.title} className="w-full h-60 object-cover px-6 mt-6 rounded-lg" />
             <CardContent className="p-6 text-center">
               <CardTitle className="text-xl font-semibold text-gray-800">{service.title}</CardTitle>
-              <p className="text-gray-600 mt-2">{service.description}</p>
+              <p className="text-gray-600 mt-2 leading-relaxed text-justify">{service.description}</p>
               <button
                 onClick={() => navigate(service.link)}
                 className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
