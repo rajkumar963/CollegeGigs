@@ -9,7 +9,8 @@ const RiteshStory: React.FC = () => {
             <span className="block text-start font-semibold mb-8">
                 Ritesh Agarwal grew up in Odisha with big dreams and an entrepreneurial spirit. Unlike most kids his age,
                 he was more interested in solving problems than following the traditional path of school, college, and a
-                stable job. His love for innovation and his determination to make an imp
+                stable job. His love for innovation and his determination to make an impact led him to take a bold
+                step—one that would change the hospitality industry forever.
             </span>
       <h2 className="text-xl font-bold mb-3">1. The Beginning of OYO </h2>
         <ul className="list-disc pl-5 space-y-3">

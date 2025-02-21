@@ -4,25 +4,25 @@ const cards = [
   {
     id: 1,
     image: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1739793466/Investor_sqou1w.jpg",
-    title: "Connect with Investors Ready to Support You",
+    title: "Get Connected to Investors in Seconds! ",
     description:
-      "Present your unique business ideas and gain access to investors eager to foster growth in emerging startups like yours.",
+       "Connect with investors, pitch your idea confidently, and secure funding to bring your vision to life. Build relationships, gain insights, and unlock growth opportunities for success.",
     buttonText: "Get Started",
   },
   {
     id: 2,
     image: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1739794030/businessman_xa1s8p.avif",
-    title: "Unlock Resources Crafted for Your Success",
+    title: "Essential Startup Resources – Instant Access.",
     description:
-      "Leverage our extensive library of e-books filled with actionable insights that will guide your startup to new heights.",
+      "Grab free e-books on marketing, sales, and entrepreneurship-- everything you need to build and grow your startup.",
     buttonText: "Explore",
   },
   {
     id: 3,
     image: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1739793466/group_ywbyd6.jpg",
-    title: "Expert Mentorship to Guide Your Growth",
+    title: "Build. Launch. Grow – We’ve Got You Covered! 🚀✨",
     description:
-      "Gain insights from seasoned mentors who help you navigate the startup landscape, overcoming challenges with strategic support.",
+      "Our startup services include web & app development, pitch decks, and more—everything you need to bring your vision to life. You focus on the idea, we handle the rest!",
     buttonText: "Learn More",
   },
 ];

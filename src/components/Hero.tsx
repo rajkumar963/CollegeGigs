@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   const navigate = useNavigate();
-  const fullText = "No hidden costs, no platform fees, and no barriers to success.";
+  const fullText = " 🔥 No hidden costs, no platform fees, and no barriers to success!!🔥";
   const [displayText, setDisplayText] = useState("");
   const [index, setIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -39,7 +39,7 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative z-10">
           <div className="text-center">
-            <span className="inline-block animate-fade-in px-4 py-1 mb-4 text-md font-medium text-blue-600 bg-blue-200 rounded-full">
+            <span className="inline-block animate-fade-in px-4 py-1 mb-4 text-xl font-medium text-blue-600 bg-blue-200 rounded-full">
               {displayText}
             </span>
             <h1 className="animate-fade-up text-4xl sm:text-5xl md:text-6xl font-bold text-primary mb-6">

@@ -1,11 +1,18 @@
 import React from "react";
+import marketingBook from "../../assets/index"; // ✅ Correct path
 
 const ebooks = [
-  { id: 1, name: "Marketing Strategies for Startups ", link: "#" },
-  { id: 2, name: "Digital Marketing Essentials", link: "#" },
-  { id: 3, name: "Social Media Growth Hacks", link: "#" },
-  { id: 4, name: "SEO Best Practices", link: "#" },
-  { id: 5, name: "Content Marketing Guide", link: "#" },
+  { id: 1, name: "Marketing Strategies for Startups", link: marketingBook.ATLBTLTTL },
+  { id: 2, name: "Digital Marketing Essentials", link: marketingBook.AARRRmodle },
+  { id: 3, name: "Social Media Growth Hacks", link: marketingBook.B2Bmarketingstrategy },
+  { id: 4, name: "SEO Best Practices", link: marketingBook.Battersysteminmarketing },
+  { id: 5, name: "Content Marketing Guide", link: marketingBook.BusinessModels },
+  { id: 6, name: "Content Marketing Guide", link: marketingBook.BuildingCustomerLoyality },
+  { id: 7, name: "Content Marketing Guide", link: marketingBook.StepFormulaforStrategicExecution},
+  { id: 8, name: "BUSINESS MODELS", link: marketingBook.BusinessModels },
+  { id: 9, name: "Content Marketing Guide", link: marketingBook.MomentMarketing },
+  { id: 10, name: "Content Marketing Guide", link: marketingBook.thePowerofCrossPromotion },
+  { id: 11, name: "Content Marketing Guide", link: marketingBook.TheUltimateGuidetoGuerrillaMarketing },
 ];
 
 const MarketingEbookSection: React.FC = () => {
@@ -14,8 +21,7 @@ const MarketingEbookSection: React.FC = () => {
       <h1 className="text-4xl font-bold mb-3 text-primary text-center underline">Marketing E-book</h1>
       <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-6">
         Discover our collection of marketing e-books designed to help you master the fundamentals of marketing, 
-        enhance your brand’s reach, and optimize your business strategies. These resources cover essential topics 
-        like digital marketing, social media growth, SEO, and content marketing.
+        enhance your brand’s reach, and optimize your business strategies.
       </p>
       <div className="max-w-4xl mx-auto bg-white p-6 rounded-xl shadow-lg">
         <table className="w-full border-collapse border border-gray-300">
@@ -34,6 +40,8 @@ const MarketingEbookSection: React.FC = () => {
                 <td className="border border-gray-300 px-5 py-3">
                   <a
                     href={ebook.link}
+                    target="_blank" // ✅ Opens PDF in a new tab
+                    rel="noopener noreferrer"
                     className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
                   >
                     View

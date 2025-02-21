@@ -21,6 +21,7 @@ import SalesEbookSection from "./components/Ebooks/SalesEbookSection";
 import EntrepreneurshipEbookSection from "./components/Ebooks/EntrepreneurshipEbookSection";
 import SachinBinnyStory from "./components/SuccessStory/SachinBinnyStory";
 import RiteshStory from "./components/SuccessStory/RiteshStory";
+import ZeptoStory from "./components/SuccessStory/ZeptoStory";
 
 const queryClient = new QueryClient();
 
@@ -47,6 +48,7 @@ const App = () => (
           <Route path="/resources/entrepreneurship" element={<EntrepreneurshipEbookSection />} />
           <Route path="/sachinbinnystory" element={<SachinBinnyStory/>} />
           <Route path="/riteshstory" element={<RiteshStory/>} />
+          <Route path="/zeptostory" element={<ZeptoStory/>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer/>

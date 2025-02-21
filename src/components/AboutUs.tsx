@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 const AboutUs = () => {
   const navigate = useNavigate();
     return (
-      <section id="about-us" className="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto py-12 px-6">
+      <section id="about-us" className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto py-10 px-6">
         {/* Left Content */}
         <div className="md:w-1/2 text-left">
           <h3 className="text-4xl font-bold tracking-wide text-gray-900 uppercase">About Us</h3>
@@ -19,11 +19,11 @@ const AboutUs = () => {
         
         {/* Right Image Section */}
         <div className="md:w-1/2 flex justify-center mt-8 md:mt-0 relative  ">
-          <div className="relative">
+          <div className="relative ">
             <img
               src="https://img.freepik.com/premium-vector/picture-people-room-with-man-woman-sitting-desk_220346-8429.jpg?w=1800" 
               alt="Person working on a laptop"
-              className="rounded w-[500px] h-[450px] object-cover"
+              className="rounded w-[550px] h-[450px] object-cover"
             />
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r  via-transparent to-transparent opacity-30 rounded-lg"></div>
           </div>

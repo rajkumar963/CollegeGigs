@@ -25,12 +25,12 @@ const CardSection: React.FC = () => {
     },
     {
       id: 3,
-      image: "https://img.freepik.com/free-photo/two-elegant-indian-fashionable-mans-model-suit-posed-winter-day_627829-1636.jpg?uid=R187627718&ga=GA1.1.856026252.1735303750&semt=ais_hybrid",
-      title: "Journey of Ratan Tata",
+      image: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1740154728/Screenshot_2025-02-21_213921_rfwv0z.png",
+      title: "Zepto: The 10-Minute Delivery Revolution",
       description:
-        "Gain insights from seasoned mentors who help you navigate the startup landscape, overcoming challenges with strategic support.",
+        "The 10-Minute Revolution: How Two Teenagers Built Zepto into a $5 Billion Startup and Transformed India’s Grocery Delivery.",
       buttonText: "Learn More",
-      link: "/",
+      link: "/zeptostory",
     },
   ];
 
