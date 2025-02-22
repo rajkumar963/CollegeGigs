@@ -14,13 +14,13 @@ const investors = [
 
 const InvestorsSection: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center py-10 bg-white py-[80px]">
-      <h2 className="text-black text-2xl font-semibold mb-[80px]">
+    <div className="flex flex-col items-center justify-center py-10 bg-white px-4 sm:px-6 lg:px-8">
+      <h2 className="text-black text-xl sm:text-2xl font-semibold mb-10 text-center">
         Backed by Industry Leaders & Visionary Investors:
       </h2>
-      <div className="overflow-hidden w-full relative">
+      <div className="overflow-hidden w-full relative max-w-screen-lg">
         <motion.div
-          className="flex w-max gap-8"
+          className="flex w-max gap-6 sm:gap-8"
           animate={{ x: ["0%", "-50%"] }}
           transition={{
             repeat: Infinity,
@@ -33,7 +33,7 @@ const InvestorsSection: React.FC = () => {
               key={index}
               src={investor.logo}
               alt={investor.name}
-              className="h-11 w-auto"
+              className="h-8 sm:h-11 w-auto"
             />
           ))}
         </motion.div>

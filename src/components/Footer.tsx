@@ -103,7 +103,7 @@ const Footer = () => {
               className="w-full flex items-center justify-center gap-2 text-black"
             >
               <Mail className="h-4 w-4 text-black" />
-              Contact Us
+              ashutosh@thestartupwallah.com
             </Button>
             <div className="flex space-x-4 mt-4">
               <a

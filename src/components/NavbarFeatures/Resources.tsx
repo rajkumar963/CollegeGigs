@@ -37,17 +37,17 @@ const CardSection: React.FC = () => {
   return (
     <div className="bg-gray-100 px-4 sm:px-6 py-8 mt-[65px] ">
       <h1 className="text-4xl font-bold mb-3 text-primary text-center underline">Resources</h1>
-      <span className=" flex text-lg mb-8  px-8  text-justify">
+      <span className=" flex text-md mb-8  px-5  text-justify">
         Unlock the full potential of your business with our stunning suite of e-books—each a beautifully crafted guide designed to inspire and empower. 
         Discover real-world insights, proven strategies, and captivating success stories that turn everyday challenges into breakthrough opportunities. 
         Whether you're looking to elevate your marketing, supercharge your sales, 
         or ignite an entrepreneurial revolution, our resources are your trusted companions on the journey to transformative growth. Embrace these expert-driven, human-centered guides and let them become the spark that propels your brand to new heights.      
       </span>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto ">
         {cards.map((card) => (
           <div
             key={card.id}
-            className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center relative"
+            className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center relative hover:shadow-xl transition"
           >
             <img
               src={card.image}

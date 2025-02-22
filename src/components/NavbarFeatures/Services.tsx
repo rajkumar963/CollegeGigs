@@ -43,7 +43,7 @@ const Services: React.FC = () => {
            business model structuring, and sales funnel development, empowering you to build a strong foundation for sustainable growth.</p>
       </div>
 
-      <div className="mt-8 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-6">
+      <div className="mt-8 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-8">
         {services.map((service, index) => (
           <Card key={index} className="bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-xl transition">
             <img src={service.img} alt={service.title} className="w-full h-60 object-cover px-6 mt-6 rounded-lg" />

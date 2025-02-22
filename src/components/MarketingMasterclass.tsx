@@ -27,7 +27,7 @@ const ExperienceSection: React.FC = () => {
   const experienceLevels = [
     {
       heading: "1. Aspiring Entrepreneurs",
-      description: "Access 1,800+ investors, step-by-step e-books on Marketing, Sales, and Entrepreneurship, and expert mentorship to build a solid foundation. Perfect for transforming innovative concepts into scalable ventures.",
+      description: "Start your entrepreneurial journey with step-by-step e-books on Marketing, Sales, and Entrepreneurship, and expert mentorship to build a solid foundation. Perfect for transforming innovative concepts into scalable ventures.",
       bgImage: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1740047824/concept_tlvlrg.avif",
     },
     {

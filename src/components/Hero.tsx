@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   const navigate = useNavigate();
-  const fullText = " 🔥 No hidden costs, no platform fees, and no barriers to success!!🔥";
+  const fullText = "🔥No hidden costs, no platform fees, and no barriers to success!🔥";
   const [displayText, setDisplayText] = useState("");
   const [index, setIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -47,7 +47,7 @@ const Hero = () => {
               <span className="text-blue-600">Begin with us!</span>
             </h1>
             <p className="animate-fade-up animation-delay-100 max-w-2xl mx-auto text-lg text-gray-600 mb-8">
-            Your startup dream deserves a chance. Get expert help, investor access & growth strategies – absolutely FREE!
+              Your startup dream deserves a chance. Get expert help, investor access & growth strategies – absolutely FREE!
             </p>
             <div className="animate-fade-up animation-delay-200 flex flex-col sm:flex-row justify-center gap-4">
               <Button size="lg" className="group" onClick={() => navigate("/services")}>

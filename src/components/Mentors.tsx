@@ -52,7 +52,7 @@ const CardSection: React.FC = () => {
               className="rounded-md w-full h-50 object-cover mb-4"
             />
             <h3 className="text-2xl font-bold mb-2">{card.title}</h3>
-            <p className="text-gray-600 text-sm mb-4 leading-relaxed text-justify">{card.description}</p>
+            <p className="text-gray-600 text-md mb-4 leading-relaxed text-justify">{card.description}</p>
             <button
               onClick={() => navigate(card.link)}
               className="mt-auto bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
