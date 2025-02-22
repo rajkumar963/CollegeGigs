@@ -16,7 +16,7 @@ const InvestorsSection: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center py-10 bg-white py-[80px]">
       <h2 className="text-black text-2xl font-semibold mb-[80px]">
-        Our Investors come from:
+        Backed by Industry Leaders & Visionary Investors:
       </h2>
       <div className="overflow-hidden w-full relative">
         <motion.div

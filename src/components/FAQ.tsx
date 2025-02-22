@@ -2,12 +2,11 @@ import { useState } from "react";
 
 const faqs = [
   { question: "What is The Startup Wallah?", answer: "The Startup Wallah is an extensive platform that bridges entrepreneurs with investors, resources, and expert-driven services to drive startup growth." },
-  { question: "How do I access the investor database?", answer: "Our platform offers access to a vetted database of 1,800+ investors, including LinkedIn profiles and email addresses, to assist startups in connecting with possible funding opportunities." },
-  { question: "What type of resources do you offer?", answer: "We provide e-books in picture form on Marketing, Entrepreneurship, and Technology for fast and efficient learning without requiring lengthy masterclasses." },
-  { question: "Can you help with website building and business strategy?", answer: "Photography is allowed but without flashYes, we have professional services, such as website building, pitch deck building, structuring business models, and sales funnel optimization, to assist startups to scale efficiently." },
+  { question: "How do I access the investor database?", answer: "Our platform offers access to a vetted database of  investors, including LinkedIn profiles and email addresses, to assist startups in connecting with possible funding opportunities." },
+  { question: "What type of resources do you offer?", answer: "We provide e-books in picture form on Marketing, Entrepreneurship, Sales and many more for fast and efficient learning without requiring lengthy masterclasses." },
+  { question: "Can you help with website building and business strategy?", answer: "Yes, we have professional services, such as website building, pitch deck building, structuring business models, and sales funnel optimization, to assist startups to scale efficiently." },
   { question: "How does The Startup Wallah aid in fundraising?", answer: " Though we do not invest directly, we endow startups with investor connections, pitch preparation, and business strategy insights that help them prepare for fundraising." },
-  { question: "Are your services free or paid?", answer: "We have free and premium services. Paid plans include investor data, advanced resources, and business support, while certain materials and insights are offered for free." },
-  { question: "Who can benefit from The Startup Wallah?", answer: "Entrepreneurs across any stage of the business cycle—be it early-stage start-ups or growing businesses—stand to gain from our investor base, learning modules, and professionally guided services." },
+  { question: "Are your services free or paid?", answer: "We provide investors database and learning resources completly free. " },
   { question: "How do I begin?", answer: "Create an account on our platform, browse our investor base and learning resources, and take the initial step towards startup building and growing with the support you need." }
 ];
 

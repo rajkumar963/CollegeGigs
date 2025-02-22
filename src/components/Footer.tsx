@@ -1,9 +1,9 @@
 
 import { Mail} from "lucide-react";
 import { FaLinkedinIn } from "react-icons/fa";
-import { FiTwitter } from "react-icons/fi";
-import { LuYoutube } from "react-icons/lu";
+import { LuInstagram } from "react-icons/lu";
 import { Button } from "./ui/button";
+import { FaWhatsapp } from "react-icons/fa6";
 import {Link} from "react-router-dom";
 
 const Footer = () => {
@@ -14,8 +14,8 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold">The Startup Wallah</h3>
-            <p className="text-sm opacity-80">
-              At The Startup Wallah, we bridge the gap between startups and success by providing essential resources for growth.
+            <p className="text-sm opacity-80 text-justify">
+            The Startup Wallah is your ultimate platform for connecting entrepreneurs with investors, mentors, and essential resources to fuel startup success. Whether you're launching your first venture or scaling your business, we provide the network and support to turn ideas into thriving enterprises.
             </p>
           </div>
 
@@ -107,22 +107,22 @@ const Footer = () => {
             </Button>
             <div className="flex space-x-4 mt-4">
               <a
-                href="#"
+                href="https://www.linkedin.com/company/the-startup-wallah/about/"
                 className="text-white hover:text-accent-foreground transition-colors"
               >
-                <FaLinkedinIn  className="h-5 w-5" />
+                <FaLinkedinIn  className="h-5 w-5 hover:text-blue-600" />
               </a>
               <a
                 href="#"
                 className="text-white hover:text-accent-foreground transition-colors"
               >
-                <FiTwitter className="h-5 w-5" />
+                <LuInstagram className="h-5 w-5 hover:text-pink-500" />
               </a>
               <a
-                href="#"
+                href="https://wa.me/message/DB45B2CA3YBTE1 "
                 className="text-white hover:text-accent-foreground transition-colors"
               >
-                <LuYoutube className="h-5 w-5" />
+                <FaWhatsapp className="h-5 w-5 hover:text-green-500" />
               </a>
             </div>
           </div>
@@ -130,7 +130,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-white/10">
           <div className="text-center text-sm text-white/60">
-            <p>© 2025 TheStartupWallah. All rights reserved.</p>
+            <p>©2025 TheStartupWallah. All rights reserved.</p>
           </div>
         </div>
       </div>

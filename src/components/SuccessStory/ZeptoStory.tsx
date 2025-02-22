@@ -2,8 +2,8 @@ import React from "react";
 
 const ZeptoStory: React.FC = () => {
   return (
-    <div className="max-w-5xl mx-auto p-6 mt-[5rem] leading-relaxed text-justify ">
-      <h1 className="text-3xl font-bold mb-3 flex justify-center items-center underline">
+    <div className="max-w-5xl mx-auto p-6 mt-[5rem] leading-relaxed text-justify family-poppins">
+      <h1 className="text-3xl font-bold mb-3 flex justify-center items-center underline text-blue-600">
          The 10-Minute Dream: How Two Teenagers Built a $5 Billion Startup.
       </h1>
             <span className="block text-start font-semibold mb-8">

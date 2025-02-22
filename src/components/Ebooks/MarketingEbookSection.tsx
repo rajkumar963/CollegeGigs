@@ -2,7 +2,7 @@ import React from "react";
 import marketingBook from "../../assets/index"; // ✅ Correct path
 
 const ebooks = [
-  { id: 1, name: "Marketing Strategies for Startups", link: marketingBook.ATLBTLTTL },
+  { id: 1, name: "Marketing Techaniques (ATL-BTL-TTL)", link: marketingBook.ATLBTLTTL },
   { id: 2, name: "Digital Marketing Essentials", link: marketingBook.AARRRmodle },
   { id: 3, name: "Social Media Growth Hacks", link: marketingBook.B2Bmarketingstrategy },
   { id: 4, name: "SEO Best Practices", link: marketingBook.Battersysteminmarketing },
@@ -42,7 +42,7 @@ const MarketingEbookSection: React.FC = () => {
             {ebooks.map((ebook) => (
               <tr key={ebook.id} className="text-center border border-gray-300">
                 <td className="border border-gray-300 px-5 py-3">{ebook.id}</td>
-                <td className="border border-gray-300 px-5 py-3">{ebook.name}</td>
+                <td className="border border-gray-300 px-5 py-3 font-semibold">{ebook.name}</td>
                 <td className="border border-gray-300 px-5 py-3">
                   <a
                     href={ebook.link}

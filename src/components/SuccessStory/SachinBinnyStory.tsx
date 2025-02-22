@@ -2,8 +2,8 @@ import React from "react";
 
 const SachinBinnyStory: React.FC = () => {
   return (
-    <div className="max-w-5xl mx-auto p-6 mt-[5rem] leading-relaxed text-justify ">
-      <h1 className="text-3xl font-bold mb-3 flex justify-center items-center">
+    <div className="max-w-5xl mx-auto p-6 mt-[5rem] leading-relaxed text-justify family-poppins">
+      <h1 className="text-3xl font-bold mb-3 flex justify-center items-center underline">
         From IIT Dreams to Building an Empire: The Inspiring Journey of Sachin and Binny Bansal.</h1>
             <span className="block text-start font-semibold mb-8">
                 Every great success story begins with a dream, a spark of inspiration, and the

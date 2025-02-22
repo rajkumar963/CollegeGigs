@@ -8,28 +8,28 @@ const CardSection: React.FC = () => {
     {
       id: 1,
       image: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1739943961/Binny_Bansal_r08e7w.jpg",
-      title: "Journey of Sachin and Binny Bansal",
+      title: " Sachin & Binny Bansal ",
       description:
-        "From IIT Dreams to Building an Empire: Thespiring Journey of Sachin and Binny Bansal.",
-      buttonText: "Learn More",
+        "From IIT classrooms to revolutionizing e-commerce with Flipkart.",
+      buttonText: "Explore More",
       link: "/sachinbinnystory",
     },
     {
       id: 2,
       image: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1740047824/Ritesh-Agarwal-Success-Story-2023_jnwbq2.webp",
-      title: "The Journey of Ritesh Agarwal and OYO Rooms",
+      title: "Ritesh Agarwal",
       description:
-        "Ritesh Agarwal grew up in Odisha with big dreams and an entrepreneurial spirit. Unlike most kids his age.",
-      buttonText: "Learn More",
+        "A college dropout who built OYO into a global hospitality giant.",
+      buttonText: "Explore More",
       link: "/riteshstory",
     },
     {
       id: 3,
       image: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1740154728/Screenshot_2025-02-21_213921_rfwv0z.png",
-      title: "Zepto: The 10-Minute Delivery Revolution",
+      title: " Zepto Founders",
       description:
-        "The 10-Minute Revolution: How Two Teenagers Built Zepto into a $5 Billion Startup and Transformed India’s Grocery Delivery.",
-      buttonText: "Learn More",
+        "Teenagers who redefined grocery delivery with a 10-minute promise.",
+      buttonText: "Explore More",
       link: "/zeptostory",
     },
   ];

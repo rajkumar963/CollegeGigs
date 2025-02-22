@@ -2,9 +2,9 @@ import React from "react";
 
 const RiteshStory: React.FC = () => {
   return (
-    <div className="max-w-5xl mx-auto p-6 mt-[5rem] leading-relaxed text-justify ">
-      <h1 className="text-3xl font-bold mb-3 flex justify-center items-center">
-      The Journey of Ritesh Agarwal and OYO Rooms
+    <div className="max-w-5xl mx-auto p-6 mt-[5rem] leading-relaxed text-justify family-poppins ">
+      <h1 className="text-3xl font-bold mb-3 flex justify-center items-center underline text-blue-600">
+        The Journey of Ritesh Agarwal and OYO Rooms
       </h1>
             <span className="block text-start font-semibold mb-8">
                 Ritesh Agarwal grew up in Odisha with big dreams and an entrepreneurial spirit. Unlike most kids his age,
