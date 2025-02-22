@@ -10,7 +10,7 @@ const CardSection: React.FC = () => {
       image: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1739793466/Investor_sqou1w.jpg",
       title: "Marketing",
       description:
-        "Present your unique business ideas and gain access to investors eager to foster growth in emerging startups like yours.",
+        "Gain real-world insights and proven marketing techniques, created by industry-leading experts, that set your business apart.",
       buttonText: "Get E-Books",
       link: "/resources/marketing",
     },
@@ -19,7 +19,7 @@ const CardSection: React.FC = () => {
       image: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1739794030/businessman_xa1s8p.avif",
       title: "Sales",
       description:
-        "Leverage our extensive library of e-books filled with actionable insights that will guide your startup to new heights.",
+        "Discover actionable insights and time-tested sales strategies, developed by top sales innovators, that distinguish your business from the competition.",
       buttonText: "Get E-Books",
       link: "/resources/sales",
     },
@@ -28,17 +28,20 @@ const CardSection: React.FC = () => {
       image: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1739793466/group_ywbyd6.jpg",
       title: "Entrepreneurship",
       description:
-        "Gain insights from seasoned mentors who help you navigate the startup landscape, overcoming challenges with strategic support.",
+        "Discover actionable insights and time-tested entrepreneurial strategies, developed by visionary founders, that set your venture apart in today's competitive landscape.",
       buttonText: "Get E-Books",
       link: "/resources/entrepreneurship",
     },
   ];
 
   return (
-    <div className="bg-gray-100 px-4 sm:px-6 py-8 mt-[65px]">
+    <div className="bg-gray-100 px-4 sm:px-6 py-8 mt-[65px] ">
       <h1 className="text-4xl font-bold mb-3 text-primary text-center underline">Resources</h1>
-      <span className="text-xl mb-8 text-primary flex justify-center text-center">
-        We are providing E-books that are very precise and focus on core concepts from an application point of view.
+      <span className=" flex text-lg mb-8  px-8  text-justify">
+        Unlock the full potential of your business with our stunning suite of e-books—each a beautifully crafted guide designed to inspire and empower. 
+        Discover real-world insights, proven strategies, and captivating success stories that turn everyday challenges into breakthrough opportunities. 
+        Whether you're looking to elevate your marketing, supercharge your sales, 
+        or ignite an entrepreneurial revolution, our resources are your trusted companions on the journey to transformative growth. Embrace these expert-driven, human-centered guides and let them become the spark that propels your brand to new heights.      
       </span>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {cards.map((card) => (

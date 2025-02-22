@@ -10,6 +10,7 @@ const marketingBook = {
     MomentMarketing: "/MarketingEbook/MomentMarketing.pdf",
     thePowerofCrossPromotion: "/MarketingEbook/thePowerofCrossPromotion.pdf",
     TheUltimateGuidetoGuerrillaMarketing: "/MarketingEbook/TheUltimateGuidetoGuerrillaMarketing.pdf",
+    B2BSalesStrategy: "/SalesEBook/B2BSalesStrategy.pdf",
   };
   
   export default marketingBook;
