@@ -46,7 +46,7 @@ export default function CampusGigLanding() {
   }
 
   const openYouTubeVideo = () => {
-    window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank")
+    window.open("https://youtu.be/xN4kcOkxmN0?si=LgipNFbC__l-KKlC", "_blank")
   }
 
   const toggleFaq = (faqId: string) => {
@@ -100,11 +100,11 @@ export default function CampusGigLanding() {
       <nav className="bg-white shadow-lg fixed w-full z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
-            <div className="flex items-center">
+            <a href="/" className="flex items-center">
               <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 CampusGig
               </span>
-            </div>
+            </a>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
@@ -203,7 +203,7 @@ export default function CampusGigLanding() {
               <iframe
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+                src="https://www.youtube.com/embed/xN4kcOkxmN0?si=vOSS6_iUsTphJk5Q"
                 title="CampusGig Introduction Video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
