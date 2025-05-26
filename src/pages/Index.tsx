@@ -1,25 +1,12 @@
 
-import Hero from "@/components/Hero"; 
-import InvestorsSection from "@/components/InvestorsSection";
-import StartupMentorship from "@/components/StartupMentorship";
-import MarketingMasterclass from "@/components/MarketingMasterclass";
-import PricingSection from "@/components/PricingSection";
-import Mentors from "@/components/Mentors";
-import FAQ from "@/components/FAQ";
-import AboutUs from "@/components/AboutUs";
+import CampusGigLanding from "@/components/CampusGigLanding";
+
 
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Hero />
-      <AboutUs/>
-      <InvestorsSection/>
-      <Mentors />
-      <MarketingMasterclass />
-      <StartupMentorship />
-      <PricingSection />
-      <FAQ/>
+      <CampusGigLanding/>
     </div>
   );
 };
