@@ -409,6 +409,23 @@ export default function CampusGigLanding() {
                 <strong>Guided by:</strong> Product managers and startup founders
               </p>
             </div>
+            {/* Web Development */}
+            <div className="bg-gradient-to-br from-teal-400 to-pink-400 p-6 rounded-2xl text-gray-800 hover:transform hover:scale-105 transition-all shadow-lg">
+              <div className="mb-4">
+                <Settings className="w-8 h-8 mb-4" />
+                <h3 className="text-xl font-bold mb-2">Web Development</h3>
+              </div>
+              <ul className="space-y-2 text-sm mb-4">
+                <li>• Web development (front-end & back-end)</li>
+                <li>• App development (mobile & cross-platform)</li>
+                <li>• Data science & analytics</li>
+                <li>• Terminal use & running programs</li>
+                <li>• UI/UX design fundamentals</li>
+              </ul>
+              <p className="text-xs bg-black bg-opacity-20 p-2 rounded text-white">
+                <strong>Guided by:</strong> Software engineers and tech mentors
+              </p>
+            </div>
           </div>
         </div>
       </section>
