@@ -27,6 +27,7 @@ import {
   Handshake,
   Settings,
   PlaneIcon as PaperPlane,
+  SquareDashedBottomCode
 } from "lucide-react"
 
 export default function CampusGigLanding() {
@@ -64,7 +65,7 @@ export default function CampusGigLanding() {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
   e.preventDefault();
   const form = e.target as HTMLFormElement;
-  const url = "https://script.google.com/macros/s/AKfycbz28pDV5_za8JkIOQ5DwG1SHCVxJhtcWQUJXZRj8SXawHW0Z-w9GAMxEZ6hooJPeQA/exec";
+  const url = "https://script.google.com/macros/s/AKfycbxZtHoJ8FZZ2SGbDdYfEJsMF8goKPV6s68ii0d3Cj5tpOH5Shn_6JgipZrPcxV1MVLS/exec";
 
   const formData = new FormData(form);
   const formBody = new URLSearchParams(formData as any).toString();
@@ -238,15 +239,15 @@ export default function CampusGigLanding() {
           {/* Trust indicators */}
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">50+</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">140+</div>
               <div className="text-gray-600">Students Connected</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-purple-600 mb-2">10+</div>
+              <div className="text-4xl font-bold text-purple-600 mb-2">25+</div>
               <div className="text-gray-600">Successful Projects</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-green-600 mb-2">10+</div>
+              <div className="text-4xl font-bold text-green-600 mb-2">12+</div>
               <div className="text-gray-600">Expert Mentors</div>
             </div>
           </div>
@@ -319,8 +320,8 @@ export default function CampusGigLanding() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Real Projects, Real Impact</h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-              Collaborative projects where students tackle startup challenges with expert guidance
+            <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto">
+              Students work with guidance from expert mentors and faculty to deliver exceptional results.
             </p>
           </div>
 
@@ -410,10 +411,10 @@ export default function CampusGigLanding() {
               </p>
             </div>
             {/* Web Development */}
-            <div className="bg-gradient-to-br from-teal-400 to-pink-400 p-6 rounded-2xl text-gray-800 hover:transform hover:scale-105 transition-all shadow-lg">
+            <div className="bg-gradient-to-br from-blue-400 to-purple-500 p-6 rounded-2xl text-gray-800 hover:transform hover:scale-105 transition-all shadow-lg">
               <div className="mb-4">
-                <Settings className="w-8 h-8 mb-4" />
-                <h3 className="text-xl font-bold mb-2">Web Development</h3>
+                <SquareDashedBottomCode className="w-8 h-8 mb-4" />
+                <h3 className="text-xl font-bold mb-2">Coding</h3>
               </div>
               <ul className="space-y-2 text-sm mb-4">
                 <li>• Web development (front-end & back-end)</li>
@@ -511,9 +512,10 @@ export default function CampusGigLanding() {
                   {[
                     { value: "market_research", label: "Market Research" },
                     { value: "strategy", label: "Strategy Development" },
-                    { value: "marketing", label: "Marketing Campaigns" },
+                    { value: "marketing", label: "Marketing" },
                     { value: "sales", label: "Sales Development" },
                     { value: "product", label: "Product Development" },
+                    { value: "Coding", label: "Coding" },
                     { value: "other", label: "Other (specify)" },
                   ].map((type) => (
                     <label key={type.value} className="flex items-center">
@@ -536,39 +538,6 @@ export default function CampusGigLanding() {
                     placeholder="Please specify other project type"
                   />
                 )}
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Project Description *</label>
-                <textarea
-                  required
-                  name="ProjectDescription"
-                  rows={4}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                  placeholder="What challenge do you want students to solve? What outcome do you expect? (100–300 words)"
-                />
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Timeline *</label>
-                  <input
-                    type="text"
-                    name="Timeline"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                    placeholder="e.g., 2 weeks, 1 month"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">How did you hear about us?</label>
-                  <input
-                    type="text"
-                    name="HearAboutUs"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                    placeholder="LinkedIn, referral, website, etc."
-                  />
-                </div>
               </div>
 
               <div>
@@ -611,12 +580,12 @@ export default function CampusGigLanding() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Simple, Transparent Pricing</h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-6">
-              We believe in full transparency—no hidden platform fees. Our focus is on helping students gain hands-on
+               Our focus is on helping students gain hands-on
               experience while providing startups with valuable support.
             </p>
-            <p className="text-lg text-gray-600">
+            {/* <p className="text-lg text-gray-600">
               Students work with guidance from expert mentors and faculty to deliver exceptional results.
-            </p>
+            </p> */}
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -672,7 +641,7 @@ export default function CampusGigLanding() {
             <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 max-w-2xl mx-auto">
               <Info className="text-yellow-600 w-5 h-5 mr-2 inline" />
               <span className="text-yellow-800 font-medium">
-                No platform fees • Direct collaboration • Transparent pricing
+                No platform fees 
               </span>
             </div>
           </div>
@@ -865,6 +834,10 @@ export default function CampusGigLanding() {
                 <div className="flex items-center">
                   <Phone className="w-4 h-4 mr-3" />
                   <span>+91-9481912068</span>
+                </div>
+                <div className="flex items-center">
+                  <Phone className="w-4 h-4 mr-3" />
+                  <span>+91-7240981514</span>
                 </div>
                 <div className="flex items-center">
                   <Linkedin className="w-4 h-4 mr-3" />
