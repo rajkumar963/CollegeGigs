@@ -1,12 +1,10 @@
 
-import CampusGigLanding from "@/components/CampusGigLanding";
-
-
+import  StartupKhazana  from "../components/StartupKhazana";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <CampusGigLanding/>
+      <StartupKhazana/>
     </div>
   );
 };
